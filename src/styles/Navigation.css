@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
 body {
     padding-top: 85px;
 }
@@ -11,15 +13,17 @@ header {
 }
 
 nav {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 12px 25px 0 13px;
-    height: 85px;
+    height: 73px;
 }
 
 ul {
     list-style-type: none;
-    padding-top: 6px;
+    padding-top: 18px;
+    padding-right: 6px;
 }
 
 .Pages {
@@ -31,7 +35,7 @@ ul {
     text-decoration: none;
     color: #2361D1;
     font-size: 22.17px;
-    font-family: "https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap", sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .Contact a {
@@ -53,11 +57,11 @@ li a:hover {
 }
 
 img {
-    width: 400px;
-    height: 73px;
+    width: 380px;
+    height: 65px;
 }
 
-button {
+.mobile-menu {
     color: #2361D1;
     background: none;
     border: none;
@@ -67,7 +71,7 @@ button {
 }
 
 
-@media (max-width:1236px) {
+@media (max-width:1291px) {
 
     body {
         padding-top: 75px;
@@ -78,11 +82,11 @@ button {
     }
 
     nav {
-        height: 68px;
+        height: 63px;
     }
 
     .ContainerPages {
-        background-color: #d9d9d985;
+        background-color: #fff;
         height: max-content;
         width: 307px;
         margin-top: 70px;
@@ -125,7 +129,7 @@ button {
         height: 66px;
     }
 
-    button {
+    .mobile-menu {
         display: block;
 
     }
@@ -138,7 +142,7 @@ button {
         height: 45px;
     }
 
-    button {
+    .mobile-menu {
         display: block;
         font-size: 27px;
         margin-top: -20px;

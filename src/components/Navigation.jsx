@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigation.css'
-import logo from '../assets/Logo.png'
+import logo from '../assets/Images/Logo.png'
 import React, { useState } from 'react';
 
 
@@ -15,7 +15,7 @@ const Navigation = () => {
     <header>
       <nav >
         <img src={logo} alt='Logo de la empresa' />
-        <button onClick={toggleMenu}>
+        <button className='mobile-menu' title='Haz click para desplegar el menu' onClick={toggleMenu}>
           <i className='fa-solid fa-bars'></i>
         </button>
         <div className={`ContainerPages ${menuVisible ? 'menu-visible' : ''}`}>

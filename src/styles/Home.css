@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+         
+         
+  }
+
+
+* {
+    margin: 0;
+  }
+
+.section1 {
+    background-color: #1D64CBCF;
+    color: #fff;
+    min-height: 31rem;
+}
+
+h1 {
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42.68px;
+    margin: 0 5px 0 5px;
+}
+
+h2 {
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    max-width: 52rem;
+    font-size: 49.68px;
+    margin: 50px 0 0 140px;
+}
+
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 43rem;
+    text-align: justify;
+    font-size: 15.68px;
+    font-weight: 400;
+    margin: 10px 0 40px 140px;
+}
+
+.containerExperience {
+    background-color: #fff;
+    max-width: 350px;
+    height: 245px;
+    margin-left: auto;
+    margin-top: -291px;
+    margin-right: 140px;
+    border: 2px solid #2361D1;
+}
+
+h3 {
+    color: #2361D1;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+    margin-left: 36px;
+    padding-top: 20px;
+}
+
+p {
+    color: #2361D1;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    margin: 15px 36px 0 36px;
+    font-size: 12px;
+}
+
+.contact {
+    background-color: #2361D1;
+    color:#fff;
+    border-radius: 1.463px;
+    width: 128px;
+    height: 34px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13.171px;
+    margin: 12px 0 0 36px;
+    border: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.contact:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.Mano {
+    width: 123px;
+    height: 147px;
+    margin-top: -66px;
+    margin-left: 116px;
+}
+
+@media (max-width:1450px) {
+    h2, h4 {
+        margin-left: 64px;
+    }
+    
+    .containerExperience {
+        margin-right: 64px;
+    }
+
+    .contact {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+    .contact:hover {
+        box-shadow: none;
+      }
+
+    .contact:active {
+        box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width:1225px) {
+    h1 {
+        font-size: 31px;
+    }
+    
+    h2 {
+        margin-left: 95px;
+        font-size: 35px;
+        max-width: 42rem;
+    } 
+    
+    h4 {
+        margin-left: 95px;
+        font-size: 10px;
+        max-width: 30rem;
+    }
+    
+    .containerExperience {
+        margin-right: 95px;
+        margin-top: -236px;
+        max-width: 270px;
+        height: 226px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 11px;
+    }
+    
+    .contact {
+        width: 128px;
+        height: 34px;
+        font-size: 13.171px;
+        margin: 12px 0 0 36px;
+    }
+
+    .section1 {
+        min-height: 26rem;
+    }
+}
+
+@media (max-width:990px) {
+    h1 {
+        font-size: 29px;
+    }
+    
+    h2 {
+        margin-left: 48px;
+        font-size: 32px;
+        max-width: 40rem;
+    } 
+    
+    h4 {
+        margin-left: 48px;
+        font-size: 10px;
+    }
+    
+    .containerExperience {
+        margin-right: 48px;
+        max-width: 223px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 10px;
+        width: 151px;
+    }
+    
+    .contact {
+        width: 128px;
+        height: 34px;
+        font-size: 13.171px;
+        margin: 12px 0 0 36px;
+    }
+    
+    .section1 {
+        min-height: 25rem;
+    }
+}
+
+@media (max-width:795px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+        max-width: 34rem;
+        margin-top: 18px;
+        margin-right: 30px;
+    } 
+    
+    h4 {
+        max-width: 31rem;
+        margin-right: 48px;
+    }
+
+    .containerExperience {
+        margin-top: -15px;
+        float: left;
+        margin-left: 48px;
+    }
+
+    .section1 {
+        min-height: 32rem;
+    }
+} 
+
+
+@media (max-width:569px) {
+    h1 {
+        font-size: 20px;
+        padding-top: 31px;
+    }
+
+    h2 {
+        font-size: 20px;
+    } 
+    
+    .containerExperience {
+        margin-top: -15px;
+        float: left;
+        margin-left: 48px;
+        max-width: 148px;
+        height: 182px;
+    }
+
+    h3 {
+        font-size: 17px;
+        margin-left: 22px;
+        padding-top: 17px;
+    }
+    
+    p {
+        font-size: 8px;
+        width: 105px;
+        margin: 13px 14px 0 22px;
+    }
+
+    .contact {
+        width: 87px;
+        height: 31px;
+        font-size: 10.171px;
+        margin-left: 22px;
+    }    
+
+    .Mano {
+        width: 96px;
+        height: 122px;
+        margin-top: -58px;
+        margin-left: 74px;
+    }
+
+    .section1 {
+        min-height: 27rem;
+    }
+}
+
+@media (max-width:488px) {
+    h2,h4 {
+        margin-left: 22px;
+        margin-right: 22px;
+    } 
+    
+    .containerExperience {
+        margin-left: 22px;
+    }
+
+    .section1 {
+        min-height: 27rem;
+    }
+}
+
+@media (max-width:415px) {
+    .section1 {
+        min-height: 27rem;
+    }
+}
