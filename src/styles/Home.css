@@ -5,8 +5,6 @@
     src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
          url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
          url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
-         
-         
   }
 
 
@@ -18,9 +16,10 @@
     background-color: #1D64CBCF;
     color: #fff;
     min-height: 31rem;
+    width: 100%;
 }
 
-h1 {
+.mainTitle {
     font-family: 'Microgramma D Extended Bold', sans-serif;
     text-align: center;
     padding-top: 50px;
@@ -28,14 +27,14 @@ h1 {
     margin: 0 5px 0 5px;
 }
 
-h2 {
+.subtitle {
     font-family: 'Microgramma D Extended Bold', sans-serif;
     max-width: 52rem;
     font-size: 49.68px;
     margin: 50px 0 0 140px;
 }
 
-h4 {
+.description {
     font-family: 'Work Sans', sans-serif;
     max-width: 43rem;
     text-align: justify;
@@ -54,7 +53,7 @@ h4 {
     border: 2px solid #2361D1;
 }
 
-h3 {
+.experience {
     color: #2361D1;
     font-family: 'Work Sans', sans-serif;
     font-size: 36px;
@@ -62,7 +61,7 @@ h3 {
     padding-top: 20px;
 }
 
-p {
+.descriptionExperience {
     color: #2361D1;
     font-family: 'Work Sans', sans-serif;
     text-align: justify;
@@ -70,7 +69,7 @@ p {
     font-size: 12px;
 }
 
-.contact {
+.contact, .viewMore {
     background-color: #2361D1;
     color:#fff;
     border-radius: 1.463px;
@@ -83,11 +82,17 @@ p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contact:hover {
+.viewMore {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.contact, .viewMore:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-.contact:active {
+.contact, .viewMore:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -99,7 +104,7 @@ p {
 }
 
 @media (max-width:1450px) {
-    h2, h4 {
+   .subtitle, .description {
         margin-left: 64px;
     }
     
@@ -121,17 +126,17 @@ p {
 }
 
 @media (max-width:1225px) {
-    h1 {
+    .mainTitle {
         font-size: 31px;
     }
     
-    h2 {
+    .subtitle {
         margin-left: 95px;
         font-size: 35px;
         max-width: 42rem;
     } 
     
-    h4 {
+    .description {
         margin-left: 95px;
         font-size: 10px;
         max-width: 30rem;
@@ -144,11 +149,11 @@ p {
         height: 226px;
     }
 
-    h3 {
+    .experience {
         font-size: 25px;
     }
     
-    p {
+    .descriptionExperience {
         font-size: 11px;
     }
     
@@ -165,17 +170,17 @@ p {
 }
 
 @media (max-width:990px) {
-    h1 {
+    .mainTitle {
         font-size: 29px;
     }
     
-    h2 {
+    .subtitle {
         margin-left: 48px;
         font-size: 32px;
         max-width: 40rem;
     } 
     
-    h4 {
+    .description {
         margin-left: 48px;
         font-size: 10px;
     }
@@ -185,11 +190,11 @@ p {
         max-width: 223px;
     }
 
-    h3 {
+    .experience {
         font-size: 22px;
     }
     
-    p {
+    .descriptionExperience {
         font-size: 10px;
         width: 151px;
     }
@@ -207,18 +212,18 @@ p {
 }
 
 @media (max-width:795px) {
-    h1 {
+    .mainTitle {
         font-size: 25px;
     }
 
-    h2 {
+    .subtitle {
         font-size: 24px;
         max-width: 34rem;
         margin-top: 18px;
         margin-right: 30px;
     } 
     
-    h4 {
+   .description {
         max-width: 31rem;
         margin-right: 48px;
     }
@@ -236,12 +241,12 @@ p {
 
 
 @media (max-width:569px) {
-    h1 {
+    .mainTitle {
         font-size: 20px;
         padding-top: 31px;
     }
 
-    h2 {
+    .subtitle {
         font-size: 20px;
     } 
     
@@ -253,13 +258,13 @@ p {
         height: 182px;
     }
 
-    h3 {
+    .experience {
         font-size: 17px;
         margin-left: 22px;
         padding-top: 17px;
     }
     
-    p {
+    .descriptionExperience{
         font-size: 8px;
         width: 105px;
         margin: 13px 14px 0 22px;
@@ -285,7 +290,7 @@ p {
 }
 
 @media (max-width:488px) {
-    h2,h4 {
+    .subtitle, .description {
         margin-left: 22px;
         margin-right: 22px;
     } 

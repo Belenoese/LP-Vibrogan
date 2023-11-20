@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+  }
+
+/* body {
+    background-image: url('../assets/Images/Fondo.png');
+    /* height: 100vh; 
+} */
+
+.containerFilter {
+    background-image: url('../assets/Images/Fondo.png');
+    padding-bottom: 36px;
+}
+
+.titleProducts {
+    color: #2947A9;
+    text-align: center;
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    padding-top: 36px;
+    /* width: 100%; */
+    font-size: 30px;
+}
+
+.sectionFilter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 63px;
+    margin-top: 45px;
+    padding-bottom: 65px;
+    justify-items: center;
+
+}
+
+.containerProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 208px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.containerProducts:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.419);
+    transform: translateY(-5px);
+}
+
+.containerProducts:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.419);
+}
+
+.descriptionProducts {
+    margin-top: 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 23px;
+    border-top: 2px solid #D9D9D9;
+    width: 75%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.White {
+    background-color: #fff;
+    color: #2947A9;
+}
+
+.Blue {
+    background-color: #2947A9;
+    color: #fff;
+}
+
+@media (max-width:1207px) {
+    .sectionFilter {
+        display: flex;
+        gap: 63px;
+        justify-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+

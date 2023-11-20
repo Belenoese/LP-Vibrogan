@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+  }
+
+.section3 {
+    background-color: #1D64CBCF;
+    padding-bottom: 8rem;
+    min-height: 53rem;
+}
+
+.tuboSection3 {
+    width: 389px;
+    height: 363px;
+    margin-top: 85px;
+    margin-left: 190px;
+}
+
+
+.containerService {
+    background-color: #fff;
+}
+
+.imgFirstService,
+.imgSecondService,
+.imgThirdService,
+.imgFourthService {
+    object-fit: cover;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#firstService {
+    width: 345px;
+    padding: 21.952px;
+    border-radius: 3px;
+    margin-left: 23rem;
+    margin-top: 71px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 2;
+}
+
+.imgFirstService {
+    width: 70.978px;
+    height: 70.978px; 
+    margin-left: 45rem;
+    margin-top: -9rem;
+    z-index: 9;
+}
+
+#secondService {
+    width: 264.155px;
+    padding: 21.952px;
+    border-radius: 3px;
+    margin-left: 9rem;
+    margin-top: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+.imgSecondService {
+    width: 61.466px;
+    height: 65px;
+    z-index: 9;
+    margin-left: 7rem;
+    margin-top: -134px;
+}
+
+#thirdService {
+    width: 236px;
+    padding: 21.952px;
+    border-radius: 3px;
+    margin-left: 25rem;
+    margin-top: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 4;
+}
+
+.imgThirdService {
+    width: 58px;
+    height: 55px;
+    z-index: 9;
+    margin-left: 40rem;
+    margin-top: -8rem;
+}
+
+#fourthService {
+    width: 236px;
+    padding: 21.952px;
+    border-radius: 3px;
+    margin-left: 10rem;
+    margin-top: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 3;
+}
+
+.imgFourthService {
+    width: 61px;
+    height: 57px;
+    z-index: 9;
+    margin-left: 8rem;
+    margin-top: -8rem;
+}
+
+.textService {
+    color: #667299;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25.56px;
+    font-weight: 400;
+    border-left: 6px solid #F9995D;
+    padding-left: 18px;
+    margin-left: 15px;
+}
+
+
+.contactInfo {
+    background-image: url('../assets/Images/FondoContact.png');
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -44rem;
+    padding: 40px;
+    width: 30rem;
+    height: 46rem;
+    position: relative;
+    z-index: 9;
+}
+
+.titleContactInfo {
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    font-size: 34.63px;
+    color: #1F62CE;
+    text-align: center;
+}
+
+.menuInfo {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.itemInfo {
+    margin-top: 19px;
+}
+
+.strongContactInfo {
+    font-family: 'Work Sans', sans-serif;
+    color: #1b46d5;
+    font-size: 21.63px;
+    font-variant: all-small-caps;
+}
+
+.spanContactInfo {
+    font-family: 'Work Sans', sans-serif;
+    color: #292E3D;
+    font-size: 18.63px;
+    text-transform: capitalize;
+    margin-left: 16px;
+}
+
+.iconFace {
+    width: 47px;
+    height: 34px;
+    margin-top: -4px;
+    margin-left: 16px;
+}
+
+.iconInsta {
+    width: 40px;
+    height: 35px;
+    margin-top: -4px;
+    margin-left: 14px;
+}
+
+.iconWsp {
+    width: 44px;
+    height: 36px;
+    margin-top: -4px;
+    margin-left: 18px;
+}
+
+.socialContact {
+    margin-left: 130px;
+    margin-top: -26px;
+}
+
+.mapsContactInfo iframe {
+    display: block;
+    margin: auto;
+    margin-top: 18px;
+    width: 30rem;
+    height: 17rem;
+  }
+
+.officeHours {
+    display: block;
+    margin: auto;
+    width: 181px;
+}
+
+.infoHours {
+    display: flex;
+    width: 416px;
+    text-align: center;
+    margin-left: 31px;
+    margin-top: 15px;
+}
+
+.logoGris {
+    width: 244px;
+    height: 51px;
+    display: block;
+    margin: auto;
+    margin-top: 48px;
+
+}
+
+@media (max-width:1400px) {
+    .tuboSection3 {
+        width: 349px;
+        height: 325px;
+        margin-left: 102px;
+    }
+
+    .textService {
+        font-size: 16.56px;
+        margin-left: 1px;
+    }
+
+    #firstService {
+      width: 12rem;
+      margin-left: 16rem;
+    }
+
+    #secondService {
+        width: 11rem;
+        margin-left: 5rem;
+    }
+
+    #thirdService {
+        width: 11rem;
+        margin-left: 18rem;
+    }
+
+    #fourthService {
+        width: 11rem;
+        margin-left: 7rem;
+    }
+
+    .imgFirstService {
+        width: 65.978px;
+        height: 58.978px;
+        margin-left: 28rem;
+        margin-top: -7.5rem;
+    }
+
+    .imgSecondService {
+        width: 48.466px;
+        height: 52px;
+        margin-left: 4rem;
+        margin-top: -7rem;
+    }
+
+    .imgThirdService {
+        margin-left: 29rem;
+        margin-top: -7rem;
+    }
+
+    .imgFourthService {
+        width: 54px;
+        height: 50px;
+        margin-left: 5rem;
+        margin-top: -7rem;
+    }
+    
+
+    .titleContactInfo {
+        font-size: 24.63px;
+    }
+    
+    .contactInfo {
+        margin-top: -39rem;
+        padding: 32px;
+        width: 24rem;
+        height: 40rem;
+    }
+
+    .itemInfo {
+        margin-top: 10px;
+    }
+    
+    .strongContactInfo {
+        font-size: 18.63px;
+    }
+    
+    .spanContactInfo {
+        font-size: 14.63px;
+    }
+    
+    .iconFace {
+        width: 41px;
+        height: 27px;
+        margin-left: -18px;
+    }
+    
+    .iconInsta {
+        width: 33px;
+        height: 28px;
+        margin-left: -9px;
+    }
+    
+    .iconWsp {
+        width: 34px;
+        height: 29px;
+        margin-left: -9px;
+    }
+
+    
+    .mapsContactInfo iframe {
+        width: 24rem;
+        height: 277px;
+        margin-left: 0;
+      }
+    
+    .officeHours {
+        width: 152px;
+    }
+
+    .infoHours {
+        width: 324px;
+    }
+
+    .logoGris {
+        width: 234px;
+        height: 47px;
+    }
+}
+
+@media (max-width:1008px) {
+    .tuboSection3 {
+        width: 275px;
+        height: 249px;
+        margin-left: 60px;
+    }
+
+    .textService {
+        font-size: 10.56px;
+        margin-left: -3px;
+        margin-top: -3px;
+    }
+
+    #firstService {
+        width: 9rem;
+        margin-left: 11rem;
+        height: 15px;
+    }
+
+    #secondService {
+        width: 8rem;
+        height: 15px;
+        margin-left: 3rem;
+        margin-top: 29px; 
+    }
+
+    #thirdService {
+        width: 8rem;
+        height: 15px;
+        margin-left: 12rem;
+        margin-top: 27px;
+    }
+
+    #fourthService {
+        width: 8rem;
+        margin-left: 4rem;
+        margin-top: 24px;
+        height: 15px;
+    }
+
+    .imgFirstService {
+        width: 52.978px;
+        height: 52.978px;
+        margin-left: 20.5rem;
+        margin-top: -6rem;
+    }
+
+    .imgSecondService {
+        width: 41.466px;
+        height: 44px;
+        margin-left: 2rem;
+        margin-top: -5.5rem;
+    }
+
+    .imgThirdService {
+        margin-left: 21rem;
+        margin-top: -5rem;
+        width: 48px;
+        height: 45px;
+    }
+
+    .imgFourthService {
+        width: 42px;
+        height: 39px;
+        margin-left: 3rem;
+        margin-top: -5rem;
+    }
+    
+
+    .titleContactInfo {
+        font-size: 20.63px;
+    }
+    
+    .contactInfo {
+        margin-top: -32rem;
+        width: 21rem;
+        padding: 23px;
+    }
+
+    .menuInfo {
+        padding-left: 6px;
+    }
+
+    .mapsContactInfo iframe {
+        width: 20rem;
+      }
+    
+    .officeHours {
+        margin-top: 19px;
+    }
+
+    .infoHours {
+        width: 281px;
+        margin-left: 28px;
+    }
+
+    .logoGris {
+        margin-top: 23px;
+    }
+}
+
+@media (max-width:806px) {
+    .tuboSection3 {
+        display: block;
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+
+    .services {
+        width: 26rem;
+        margin: 0 auto;
+    }
+
+    .contactInfo {
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+
+}
+
+@media (max-width:430px) {
+    .section3 {
+        padding-bottom: 5rem;
+    }
+
+    .tuboSection3 {
+        width: 275px;
+        height: 249px;
+        padding-top: 37px;
+    }
+
+    .services {
+        width: 21rem;
+        margin: 0 auto;
+        margin-top: -1rem;
+    }
+
+    .textService {
+        font-size: 8.56px;
+        margin-left: -5px;
+        margin-top: -7px;
+    }
+
+    #firstService {
+        width: 7rem;
+        margin-left: 8.5rem;
+        height: 6px;
+    }
+
+    #secondService {
+        width: 5rem;
+        height: 6px;
+        margin-left: 2rem;
+    }
+
+    #thirdService {
+        width: 5rem;
+        height: 6px;
+        margin-left: 9rem;
+    }
+
+    #fourthService {
+        width: 5rem;
+        margin-left: 3rem;
+        margin-top: 24px;
+        height: 6px;
+    }
+
+    .imgFirstService {
+        width: 45.978px;
+        height: 45.978px;
+        margin-left: 16.5rem;
+        margin-top: -5rem;
+    }
+
+    .imgSecondService {
+        width: 36.466px;
+        height: 38px;
+        margin-left: 1rem;
+        margin-top: -4.8rem;
+    }
+
+    .imgThirdService {
+        margin-left: 15rem;
+        margin-top: -4.5rem;
+        width: 42px;
+        height: 40px;
+    }
+
+    .imgFourthService {
+        width: 38px;
+        height: 35px;
+        margin-left: 2rem;
+        margin-top: -4.5rem;
+    }
+    
+
+    .titleContactInfo {
+        font-size: 13.63px;
+    }
+    
+    .contactInfo {
+        margin-top: 6rem;
+        width: 15rem;
+        height: 31rem;
+        padding: 19px;
+    }
+
+    .itemInfo {
+        margin-top: 7px;
+    }
+
+    .address {
+        margin-top: 0px;
+    }
+
+    .strongContactInfo {
+        font-size: 12.63px;
+    }
+    
+    .spanContactInfo {
+        font-size: 10.63px;
+        margin-left: 9px;
+    }
+
+    .iconFace {
+        width: 32px;
+        height: 22px;
+        margin-left: -57px;
+    }
+    
+    .iconInsta {
+        width: 26px;
+        height: 22.5px;
+    }
+    
+    .iconWsp {
+        width: 29px;
+        height: 24px;
+        margin-left: -8px;
+        margin-top: 5.5px;
+
+    }
+
+    .menuInfo {
+        padding-left: 6px;
+    }
+
+    .mapsContactInfo iframe {
+        width: 14rem;
+        height: 12rem;
+        padding-left: 0;
+      }
+    
+    .officeHours {
+        margin: 0 auto;
+        width: 7rem;
+        margin-top: 19px;
+        margin-bottom: 8px;
+    }
+
+    .infoHours {
+        width: 226px;
+        margin: 0 auto;
+    }
+
+    .logoGris {
+        width: 11rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width:340px) {
+    .section3 {
+        width: 22rem;
+    }
+
+    .containerFilter {
+        width: 22rem;
+    }
+
+    .section1 {
+        width: 22rem;
+    }
+}
+

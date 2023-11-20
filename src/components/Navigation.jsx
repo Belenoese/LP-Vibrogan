@@ -19,7 +19,7 @@ const Navigation = () => {
           <i className='fa-solid fa-bars'></i>
         </button>
         <div className={`ContainerPages ${menuVisible ? 'menu-visible' : ''}`}>
-          <ul>
+          <ul className='menuLinks'>
             <li className='Pages'>
               <NavLink to='/' onClick={toggleMenu}>Inicio</NavLink>
             </li>

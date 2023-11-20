@@ -6,6 +6,7 @@ import Products from './components/Products';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation'; 
+import Filter from './components/FilteredProducts';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
+        <Route path="/filter" element={<Filter />} />
       </Routes>
     </div>
   );
