@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+  }
+
+.firstSectionAbout {
+    background-color: #1D64CBCF;
+    padding: 59px 62px 59px 62px;
+}
+
+.aboutMe {
+    color: #fff;
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    font-size: 57.68px;
+
+}
+
+.textAbout {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20.68px;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+@media (max-width:840px) {
+    .aboutMe {
+        font-size: 42.68px;
+    
+    }
+    
+    .textAbout {
+        font-size: 17.68px;
+    }
+}
+
+@media (max-width:650px) {
+    .aboutMe {
+        font-size: 36.68px;
+    
+    }
+    
+    .textAbout {
+        font-size: 14.68px;
+    }
+}
+
+@media (max-width:580px) {
+    .firstSectionAbout {
+        padding: 38px 29px 38px 29px;
+    }
+
+    .aboutMe {
+        font-size: 30.68px;
+    
+    }
+    
+    .textAbout {
+        font-size: 11.68px;
+    }
+}
+
+@media (max-width:440px) {
+    .firstSectionAbout {
+        padding: 29px;
+    }
+
+    .aboutMe {
+        font-size: 21.68px;
+    
+    }
+    
+    .textAbout {
+        font-size: 9.68px;
+    }
+}
+
+@media (max-width:440px) {
+    .aboutMe {
+        font-size: 18.68px;
+    }
+}
+
+
+
+
+.secondSectionAbout {
+    background-image: url('../assets/Images/Fondo.png');
+}
+
+.containerVisionMission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #2947A9;
+    padding: 108px;
+}
+
+.vision {
+    margin-right: 50px;
+}
+
+.titleVision,
+.titleMission {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.textVision,
+.textMission {
+    display: flex;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 30.8rem;
+    text-align: justify;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 42px;
+}
+
+@media (max-width:1200px) {
+    .containerVisionMission {
+        padding: 50px;
+    }
+
+    .titleVision,
+    .titleMission {
+    font-size: 36px;
+    }
+
+    .textVision,
+    .textMission {
+    font-size: 24px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .titleVision,
+    .titleMission {
+    font-size: 31px;
+    }
+
+    .textVision,
+    .textMission {
+    font-size: 19px;
+    }
+}
+
+@media (max-width:580px) {
+    .containerVisionMission {
+        padding: 29px;
+    }
+
+    .titleVision,
+    .titleMission {
+    font-size: 20px;
+    }
+
+    .textVision,
+    .textMission {
+    font-size: 14px;
+    }
+}
+
+
+.thirdSectionAbout {
+    background-color: #1D64CBCF;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 70px; 
+    padding: 70px 0 70px 0;
+  }
+
+.titleThirdSectionAbout {
+    color: #fff;
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    font-size: 30.68px;
+    text-align: center;
+    width: 100%;
+}
+
+.containerCategories {
+    color: #fff;
+    width: 50%;
+}
+
+.redesAP,
+.electricalInstallations,
+.civilWorks {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.imgRedesAP,
+.imgElectricalInstallations,
+.imgCivilWorks {
+    max-width: 11.8rem;
+    height: 11.4rem;
+}
+
+.textRedesAP,
+.textElectricalInstallations,
+.textCivilWorks {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 26.68px;
+    margin-left: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.containerButtons {
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 21px 0px 27.07409px -1.46346px rgba(17, 24, 39, 0.05);
+    display: flex;
+    flex-direction: column;
+    max-width: 25.4rem;
+    height: 14.7rem;
+    padding: 14.635px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.button1,
+.button2 {
+    background-color: #2947A9;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20.17px;
+    display: flex;
+    width: 304px;
+    padding: 11.708px 14.635px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4.46px;
+    border: none;
+
+}
+
+.button1:hover, .button2:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);
+  }
+
+.button1:active, .button2:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
+  }
+
+@media (max-width: 1200px) {
+    .titleThirdSectionAbout {
+        font-size: 23.68px;
+    }
+
+    .imgRedesAP, 
+    .imgElectricalInstallations, 
+    .imgCivilWorks {
+        height: 10.4rem;
+    }
+
+    .textRedesAP, 
+    .textElectricalInstallations, 
+    .textCivilWorks {
+        font-size: 21.68px;
+        margin-left: 31px;
+    }
+
+    .button1, .button2 {
+        font-size: 16.17px;
+        width: 235px;
+    }
+
+    .containerButtons {
+        max-width: 20.4rem;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .titleThirdSectionAbout {
+        font-size: 17.68px;
+    }
+
+    .imgRedesAP, 
+    .imgElectricalInstallations, 
+    .imgCivilWorks {
+        height: 8.4rem;
+        max-width: 9.8rem;
+    }
+
+    .textRedesAP, 
+    .textElectricalInstallations, 
+    .textCivilWorks {
+        font-size: 16.68px;
+        margin-left: 20px;
+    }
+
+    .button1, .button2 {
+        font-size: 11.17px;
+        width: 172px;
+    }
+
+    .containerButtons {
+        max-width: 15.4rem;
+        height: 11.7rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .containerCategories {
+        width: 88%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .thirdSectionAbout {
+    padding: 40px 0 40px 0;
+    }
+
+    .titleThirdSectionAbout {
+        font-size: 10.68px;
+    }
+
+    .imgRedesAP, 
+    .imgElectricalInstallations, 
+    .imgCivilWorks {
+        height: 6.4rem;
+        max-width: 7.8rem;
+    }
+
+    .textRedesAP, 
+    .textElectricalInstallations, 
+    .textCivilWorks {
+        font-size: 12.68px;
+    }
+
+    .containerCategories {
+        margin-top: -18px;
+    }
+
+    .containerButtons {
+        margin-top: -52px;
+        max-width: 12.4rem;
+        height: 9.7rem;
+    }
+
+    .button1, .button2 {
+        font-size: 9.17px;
+        width: 142px;
+    }
+}
+
+.fourthSection {
+    background-color: #1D64CBCF;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 106px;
+}
+
+#carouselExampleIndicators {
+   width: 70%;
+} 
+
+
+.titleFourthSection {
+    color: #fff;
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    font-size: 30.68px;
+}
+
+.d-block {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 119px;
+  width: 53px;
+  height: 51px;
+}
+
+.carousel-indicators {
+    background-size: 50px 50px; 
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 39px;
+    height: 5px;
+}
+
+@media (max-width:870px) {
+    .titleFourthSection {
+        font-size: 22.68px;
+    }
+
+    .d-block {
+        max-width: 36.7rem;
+        height: 306px;
+    }
+}
+
+@media (max-width:760px) {
+    .titleFourthSection {
+        font-size: 18.68px;
+    }
+
+    #carouselExampleIndicators {
+        width: 80%;
+     } 
+
+    .d-block {
+        max-width: 37.7rem;
+        height: 239px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-size: 99px;
+        height: 38px;
+    }
+
+}
+
+
+@media (max-width:550px) {
+    .titleFourthSection {
+        font-size: 10.68px;
+    }
+
+    .d-block {
+        max-width: 26.7rem;
+        height: 198px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-size: 67px;
+        height: 30px;
+    }
+
+.carousel-indicators [data-bs-target] {
+        width: 32px;
+        height: 4px;
+    }
+}
+
+
+@media (max-width:470px) {
+    .d-block {
+        max-width: 23.7rem;
+        height: 170px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 30px;
+    }
+}
+
+@media (max-width:390px) {
+    .titleFourthSection {
+        width: 90%;
+    }
+
+    .d-block {
+        max-width: 19.7rem;
+        height: 126px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 4px;
+    }
+}
+
+/* @media (max-width:390px) {
+    .d-block {
+        height: 150px;
+    }
+} */
+
+

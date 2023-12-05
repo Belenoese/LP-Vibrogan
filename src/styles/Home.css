@@ -15,28 +15,28 @@
 .section1 {
     background-color: #1D64CBCF;
     color: #fff;
-    min-height: 31rem;
+    min-height: 27rem;
     width: 100%;
 }
 
 .mainTitle {
     font-family: 'Microgramma D Extended Bold', sans-serif;
     text-align: center;
-    padding-top: 50px;
-    font-size: 42.68px;
+    padding-top: 40px;
+    font-size: 39.68px;
     margin: 0 5px 0 5px;
 }
 
 .subtitle {
     font-family: 'Microgramma D Extended Bold', sans-serif;
-    max-width: 52rem;
-    font-size: 49.68px;
+    max-width: 53rem;
+    font-size: 40.68px;
     margin: 50px 0 0 140px;
 }
 
 .description {
     font-family: 'Work Sans', sans-serif;
-    max-width: 43rem;
+    max-width: 52rem;
     text-align: justify;
     font-size: 15.68px;
     font-weight: 400;
@@ -45,10 +45,10 @@
 
 .containerExperience {
     background-color: #fff;
-    max-width: 350px;
-    height: 245px;
+    max-width: 248px;
+    height: 253px;
     margin-left: auto;
-    margin-top: -291px;
+    margin-top: -221px;
     margin-right: 140px;
     border: 2px solid #2361D1;
 }
@@ -56,7 +56,7 @@
 .experience {
     color: #2361D1;
     font-family: 'Work Sans', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     margin-left: 36px;
     padding-top: 20px;
 }
@@ -66,10 +66,10 @@
     font-family: 'Work Sans', sans-serif;
     text-align: justify;
     margin: 15px 36px 0 36px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
-.contact, .viewMore {
+.contact{
     background-color: #2361D1;
     color:#fff;
     border-radius: 1.463px;
@@ -83,24 +83,32 @@
 }
 
 .viewMore {
+    background-color: #2947A9;
+    color: #fff;
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 320px;
+    height: 47px;
+    font-size: 23px;
+    border-radius: 2px;
+    border: none;
+    align-items: center;
 }
 
-.contact, .viewMore:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.contact:hover, .viewMore:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);
   }
 
-.contact, .viewMore:active {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+.contact:active, .viewMore:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
   }
 
 .Mano {
     width: 123px;
     height: 147px;
     margin-top: -66px;
-    margin-left: 116px;
+    margin-left: 121px;
 }
 
 @media (max-width:1450px) {
@@ -146,7 +154,7 @@
         margin-right: 95px;
         margin-top: -236px;
         max-width: 270px;
-        height: 226px;
+        height: 245px;
     }
 
     .experience {
@@ -255,19 +263,19 @@
         float: left;
         margin-left: 48px;
         max-width: 148px;
-        height: 182px;
+        height: 175px;
     }
 
     .experience {
-        font-size: 17px;
+        font-size: 14px;
         margin-left: 22px;
-        padding-top: 17px;
+        padding-top: 13px;
     }
     
     .descriptionExperience{
-        font-size: 8px;
+        font-size: 7px;
         width: 105px;
-        margin: 13px 14px 0 22px;
+        margin: -3px 14px 0 22px;
     }
 
     .contact {
@@ -294,6 +302,10 @@
         margin-left: 22px;
         margin-right: 22px;
     } 
+
+    .description {
+        max-width: 17rem;
+    }
     
     .containerExperience {
         margin-left: 22px;
@@ -307,5 +319,9 @@
 @media (max-width:415px) {
     .section1 {
         min-height: 27rem;
+    }
+
+    .titleProducts {
+        padding-top: 62px;
     }
 }

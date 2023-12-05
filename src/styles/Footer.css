@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+.footer {
+    background-color:  #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+
+.sectionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 96px 34px 96px;
+    height: 11rem;
+    margin-top: -30px;
+}
+
+.titleAddressFooter,
+.titlePhoneFooter,
+.titleMailFooter,
+.socialNetworkFooter {
+    font-family: 'Work Sans', sans-serif;
+    color: #2361D1;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.addressFooter,
+.phoneFooter,
+.mailFooter,
+.linkSocialNetwork {
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.contactInfoFooter {
+    margin-bottom: 17px;
+}
+
+.sectionSocialNetworkFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.textSocialLink {
+    margin-bottom: 17px;
+}
+
+.linkSocialNetworkFace {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 39px;
+    font-size: 13px;
+}
+
+.linkSocialNetworkInsta {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 39px;
+    font-size: 13px;
+}
+
+.linkSocialNetworkWsp {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 40px;
+    font-size: 13px;
+}
+
+.iconFaceFooter {
+    width: 34px;
+    height: 20px;
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 0px;
+}
+
+.iconInstaFooter {
+    width: 30px;
+    height: 23px;
+    margin-left: 7px;
+    position: absolute;
+    margin-top: -2px;
+}
+
+.iconWspFooter {
+    width: 32px;
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    margin-top: -3px;
+}
+
+.logoFooter {
+    width: 298px;
+    height: 62px;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 11rem;
+}
+
+@media (max-width:910px) {
+    .sectionFooter {
+        padding: 4px 50px 27px 50px;
+    }
+
+    .logoFooter {
+        width: 265px;
+        height: 47px;
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width:790px) {
+    .sectionFooter {
+        padding: 13px 46px 27px 46px;
+    }
+
+    .contactInfoFooter {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleAddressFooter, 
+    .titlePhoneFooter, 
+    .titleMailFooter {
+        margin-bottom: -1px;
+    }
+
+    .titleAddressFooter, .titlePhoneFooter, .titleMailFooter, .socialNetworkFooter {
+        font-family: 'Work Sans', sans-serif;
+        color: #2361D1;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: -1px;
+        margin-top: 3px;
+    }
+
+    .addressFooter, .phoneFooter, .mailFooter, .linkSocialNetwork {
+        font-family: 'Work Sans', sans-serif;
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        margin-left: 0px;
+    }
+
+    .sectionSocialNetworkFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iconFaceFooter {
+        width: 34px;
+        height: 20px;
+        margin-left: -4px;
+        position: absolute;
+        margin-top: 0px;
+    }
+
+    .linkSocialNetworkFace {
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 35px;
+        font-size: 13px;
+    }
+
+    .iconInstaFooter {
+        width: 30px;
+        height: 23px;
+        margin-left: -2px;
+        position: absolute;
+        margin-top: -1px;
+    }
+
+    .linkSocialNetworkInsta {
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 35px;
+        font-size: 13px;
+    }
+
+    .iconWspFooter {
+        width: 32px;
+        height: 24px;
+        margin-left: -3px;
+        position: absolute;
+        margin-top: -3px;
+    }
+
+    .linkSocialNetworkWsp {
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 35px;
+        font-size: 13px;
+    }
+
+    .logoFooter {
+        width: 240px;
+        height: 40px;
+        margin-top: 12rem;
+    }
+    
+}
+
+@media (max-width:570px) {
+    .sectionFooter {
+        padding: 13px 27px 27px 27px;
+    }
+}
+
+@media (max-width:520px) {
+    .sectionFooter {
+        padding: 13px 12px 27px 12px;
+    }
+
+    .titleAddressFooter, 
+    .titlePhoneFooter,
+    .titleMailFooter, 
+    .socialNetworkFooter {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    .addressFooter, 
+    .phoneFooter, 
+    .mailFooter {
+        font-size: 10px;
+    }
+
+    .linkSocialNetworkFace {
+        font-size: 10px;
+        margin-left: 24px;
+    }
+
+    .linkSocialNetworkInsta {
+        font-size: 10px;
+        margin-left: 24px;
+
+    }
+
+    .linkSocialNetworkWsp {
+        font-size: 10px;
+        margin-left: 24px;
+    }
+
+    .iconFaceFooter {
+        width: 28px;
+        height: 18px;
+        margin-top: 3px;
+    }
+
+    .iconInstaFooter {
+        width: 24px;
+        height: 19px;
+        margin-top: 1px;
+    }
+
+    .iconWspFooter {
+        width: 26px;
+        height: 21px;
+        margin-top: 0px;
+    }
+
+    .logoFooter {
+        width: 186px;
+        height: 34px;
+    }
+}
+
+@media (max-width:330px) {
+    .sectionFooter {
+        flex-direction: column;
+        height: 9rem;
+        padding-top: 46px;
+        padding-bottom: 63px;
+    }
+
+    .sectionSocialNetworkFooter {
+        margin-top: 1px;
+        margin-left: 1px;
+        flex-direction: row;
+    }
+
+    .containerLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        margin-left: 6px;
+    }
+
+    .textSocialLink {
+        margin-bottom: 8px;
+    }
+
+    .contactInfoFooter {
+        margin-bottom: 0px;
+        flex-direction: row;
+    }
+
+    .addressFooter, 
+    .phoneFooter, 
+    .mailFooter {
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+
+    .logoFooter {
+        width: 146px;
+        height: 27px;
+        margin-top: 164px;
+        margin-left: -124px;
+    }
+
+}

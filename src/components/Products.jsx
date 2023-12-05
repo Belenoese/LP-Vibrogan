@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 function Products() {
   const [products, setProducts] = useState([]);
 
@@ -10,6 +11,7 @@ function Products() {
   }, []);
 
   return (
+    <>
     <div>
       <h2>Productos</h2>
       <ul>
@@ -18,6 +20,8 @@ function Products() {
         ))}
       </ul>
     </div>
+</>
+
   );
 }
 

@@ -12,6 +12,8 @@ import IconFacebook from '../assets/Images/IconFacebook.png'
 import IconInsta from '../assets/Images/IconInsta.png'
 import IconWsp from '../assets/Images/IconWsp.png'
 import LogoGris from '../assets/Images/LogoGris.png'
+import FormContact from './FormContact'
+import Footer from './footer'
 
 function Home() {
 
@@ -51,8 +53,8 @@ function Home() {
           <button className="viewMore" title="Haz clic para ver todos los productos" aria-label="Haz clic para ver todos los productos">VER MÁS</button>
         </div>
         <section className='section3'>
+        <div className='services'>
           <img className='tuboSection3' src={TuboSection3} />
-          <div className='services'>
             <div id='firstService' className='containerService'>
               <p className='textService'>COMPROMISO MEDIO AMBIENTAL</p>
             </div>
@@ -113,6 +115,8 @@ function Home() {
             <img src={LogoGris} alt='Logo de la empresa' className='logoGris' />
           </div>
         </section>
+        <FormContact />
+        <Footer />
       </article>
     </>
   )

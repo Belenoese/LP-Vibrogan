@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+  }
+
+.sectionContact {
+    background-color: #E0E3EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContact {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 29.45px;
+    color: #2361D1;
+    margin-top: 82px;
+}
+
+.descriptionContact {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18.03px;
+    color: #2361D1;
+    width: 599px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.formContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 35px;
+    grid-template-areas:
+        "name mail"
+        "subject phone"
+        "message message"
+        "button button";
+}
+
+.inputGroup {
+    position: relative;
+    display: inline-block;
+    width: 302px;
+    height: 30px;
+    border-radius: 1.606px;
+    background: #FFF;
+}
+
+#message {
+    grid-column: 1 / span 2;
+    width: 614px;
+    height: 90px;
+}
+
+.requiredFields {
+    grid-column: 1 / span 2;
+}
+
+.buttonGroup {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+#name,
+#email,
+#subject,
+#phone {
+    border: none;
+    outline: none;
+    width: 18.7rem;
+    height: 2rem;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+::placeholder {
+    color: rgba(35, 97, 209, 0.68);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12.22px;
+    line-height: normal;
+}
+
+.asteriskName {
+    color: red;
+    position: relative;
+    margin-left: -15.5rem;
+}
+
+.asteriskEmail {
+    color: red;
+    position: relative;
+    margin-left: -10rem;
+}
+
+.asteriskSubject {
+    color: red;
+    position: relative;
+    margin-left: -15.7rem;
+}
+
+.asteriskMessage {
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 544px;
+}
+
+.requiredFields {
+    display: flex;
+    flex-direction: row;
+}
+
+.asterisk {
+    color: red;
+    position: relative;
+    margin-right: 5px;
+}
+
+.required {
+    color: #2361D1;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10.42px;
+}
+
+.buttonFormContact {
+    background-color: #2947A9;
+    color: #FFF;
+    display: flex;
+    width: 323px;
+    padding: 6.422px 8.028px;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18.22px;
+    margin-top: 37px;
+    margin-bottom: 72px;
+    border: none;
+}
+
+.buttonFormContact:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);
+  }
+
+.buttonFormContact:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
+  }
+
+.sectionTextContact {
+   background-color: #1D64CBCF;
+   text-align: center;
+}
+
+.textContact {
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    text-align: justify;
+    font-size: 31.68px;
+    color: #fff;
+    padding: 95px 87px 95px 87px;
+    margin-bottom: 0;
+}
+
+@media (max-width:1050px) {
+    .textContact {
+        font-size: 24.68px;
+        padding: 52px 68px 52px 68px;
+    }
+}
+
+@media (max-width:755px) {
+    .textContact {
+        font-size: 16.68px;
+    }
+}
+
+@media (max-width:537px) {
+    .textContact {
+        font-size: 14.68px;
+        padding: 38px 46px 38px 46px;
+    }
+}
+
+@media (max-width:640px) {
+    .titleContact {
+        font-size: 20.45px;
+        margin-top: 3rem;
+    }
+
+    .descriptionContact {
+        font-size: 12.03px;
+        width: 466px;
+    }
+
+    .inputGroup {
+        width: 184px;
+        height: 24px;
+    }
+
+    #name,
+    #email,
+    #subject,
+    #phone {
+        width: 184px;
+        height: 24px;
+    }
+
+    #message {
+        width: 387px;
+    }
+
+    .asteriskName {
+        margin-left: -9.1rem;
+        font-size: 10px;
+    }
+
+    .asteriskEmail {
+        margin-left: -5rem;
+        font-size: 10px;
+    }
+
+    .asteriskSubject {
+        margin-left: -9.3rem;
+        font-size: 10px;
+    }
+
+    .asteriskMessage {
+        right: 336px;
+        font-size: 10px;
+    }
+
+    ::placeholder {
+        font-size: 9.22px;
+    }
+
+    .buttonFormContact {
+        width: 208px;
+        font-size: 12.22px;
+    }
+
+}
+
+@media (max-width:469px) {
+    .titleContact {
+        font-size: 16.45px;
+        margin-top: 2rem;
+    }
+
+    .descriptionContact {
+        font-size: 10.03px;
+        width: 275px;    
+    }
+
+    #message {
+        width: 270px;
+    }
+
+    .asteriskMessage {
+        right: 218px;
+    }
+
+    .buttonFormContact {
+        width: 179px;
+        font-size: 10.22px;
+    }
+
+    .formContact {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:325px) {
+    .sectionContact {
+        width: 22rem;
+    }
+
+}
