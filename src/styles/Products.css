@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Microgramma D Extended Bold';
+    src: url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff2') format('woff2'),
+         url('../assets/Fonts/microgramma_d_extended_bold-webfont.woff') format('woff'),
+         url('../assets/Fonts/Microgramma D Extended Bold.otf') format('opentype');
+  }
+
+.containerFilter {
+    background-image: url('../assets/Images/Fondo.png');
+    padding-bottom: 36px;
+}
+
+.titleProducts {
+    color: #2947A9;
+    text-align: center;
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    padding-top: 36px;
+    font-size: 45px;
+}
+
+.sectionFilter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 63px;
+    margin-top: 45px;
+    padding-bottom: 65px;
+    justify-items: center;
+
+}
+
+.containerProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 208px;
+    padding-top: 28px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.containerProducts:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.419);
+    transform: translateY(-5px);
+}
+
+.containerProducts:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.419);
+}
+
+.descriptionProducts {
+    margin-top: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 23px;
+    border-top: 2px solid #D9D9D9;
+    width: 75%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.White {
+    background-color: #fff;
+    color: #2947A9;
+}
+
+.Blue {
+    background-color: #2947A9;
+    color: #fff;
+}
+
+.img.Adoquines {
+    margin-top: 15px;
+}
+
+@media (max-width:1207px) {
+    .sectionFilter {
+        display: flex;
+        gap: 63px;
+        justify-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:415px) {
+
+    .titleProducts {
+        padding-top: 42px;
+    }
+}
+
+.backroundTable {
+    background-image: url('../assets/Images/Fondo.png');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.tableProducts {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.titleTableContainer {
+    font-family: 'Microgramma D Extended Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    color: #2947A9;
+}
+
+.tableContainer {
+    padding: 50px
+}
+
+.tableProducts,
+.tableHeader,
+.tableItem {
+    border: 2px solid #8e92a1;
+}
+
+.tableHeader {
+    background-color: #fff;
+    color: #2947A9;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.tableItem {
+    background-color: #2947A9;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 23px;
+    padding: 5px;
+}
+
+.imgTable {
+    width: auto;
+    height: 147PX;
+    padding: 10px;
+
+}
+
+.backButton {
+    background-color: #2947A9;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 320px;
+    height: 47px;
+    font-size: 23px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+}
+
+.backButton:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);
+  }
+
+.backButton:active{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
+  }
+
+@media (max-width:670px) {
+    .tableHeader {
+        font-size: 18px;
+    }
+
+    .imgTable {
+        height: 109PX;
+    }
+
+    .tableItem {
+        font-size: 17px;
+    }
+
+    .backButton {
+        width: 242px;
+        height: 37px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:513px) {
+    .tableContainer {
+        padding: 16px;
+    }
+
+    .imgTable {
+        height: 88PX;
+    }
+
+    .backButton {
+        width: 171px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .tableHeader {
+        font-size: 16px;
+    }
+
+    .tableItem {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:390px) {
+    .tableHeader {
+        font-size: 14px;
+    }
+
+    .tableItem {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:368px) {
+    .imgTable {
+        height: 74PX;
+    }
+}
+
+

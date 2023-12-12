@@ -49,7 +49,7 @@ function FormContact() {
 
           <div id='message' className='inputGroup'>
           <label htmlFor='message' className='visuallyHidden'>Mensaje:</label>
-            <textarea  name='message' placeholder='MENSAJE' required onChange={(e) => handleInput('message', e.target.value)}></textarea>
+            <textarea className='placeholderMessage' name='message' placeholder='MENSAJE' required onChange={(e) => handleInput('message', e.target.value)}></textarea>
             {inputValues.message === '' && <span className='asteriskMessage'>*</span>}
           </div>
 

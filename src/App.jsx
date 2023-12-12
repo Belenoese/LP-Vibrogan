@@ -6,9 +6,10 @@ import Products from './components/Products';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation'; 
-import Filter from './components/FilteredProducts';
+// import Filter from './components/Filter';
 
 function App() {
+
   return (
     <div>
       <Navigation />
@@ -18,7 +19,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
-        <Route path="/filter" element={<Filter />} />
+        {/* <Route path="/filter" element={<Filter />} /> */}
       </Routes>
     </div>
   );

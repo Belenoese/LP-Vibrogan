@@ -1,5 +1,5 @@
 import '../styles/Home.css'
-import '../styles/FilterProducts.css'
+import '../styles/Products.css'
 import '../styles/ContactInfo.css'
 import Mano from '../assets/Images/Mano.png'
 import productImages from './ProductCategory'
@@ -24,6 +24,7 @@ function Home() {
       <article className='articleHome'>
         <section className="section1">
           <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
+          <div className='infoSection1'>
           <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
           <h4 className='description'>Encuentre la máxima calidad en productos y servicios de prefabricados de hormigón, brindamos a nuestros clientes la asistencia
             técnica que requieren, además de servicios de despacho e instalación a domicilio. Estamos aquí para superar tus expectativas.
@@ -34,9 +35,10 @@ function Home() {
             <button className="contact" title="Haz clic para contactar" aria-label="Haz clic para contactar">CONTACTAR</button>
             <img className='Mano' src={Mano} />
           </div>
+          </div>
         </section>
         <div className='containerFilter'>
-          <h1 className='titleProducts'>Productos</h1>
+          <h1 className='titleProductsHome'>Productos</h1>
           <section className="sectionFilter">
             {first6Divs.map((image, index) => (
               <div className={`${index % 2 === 0 ? 'White' : 'Blue'} containerProducts`} key={image.name}>
@@ -55,6 +57,7 @@ function Home() {
         <section className='section3'>
         <div className='services'>
           <img className='tuboSection3' src={TuboSection3} />
+          <div className='containerServices'>
             <div id='firstService' className='containerService'>
               <p className='textService'>COMPROMISO MEDIO AMBIENTAL</p>
             </div>
@@ -74,6 +77,7 @@ function Home() {
               <p className='textService'>SERVICIO DE INSTALACIÓN</p>
             </div>
             <img className='imgFourthService' src={ServisInstalacion} />
+            </div>
           </div>
           <div className='contactInfo'>
             <h3 className='titleContactInfo'>CONTÁCTANOS</h3>
