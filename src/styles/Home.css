@@ -100,7 +100,12 @@
     border-radius: 2px;
     border: none;
     align-items: center;
+    text-decoration: none;
 }
+
+.link-button {
+    text-decoration: none;
+  }
 
 .contact:hover, .viewMore:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);

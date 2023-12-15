@@ -6,7 +6,7 @@ import Products from './components/Products';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation'; 
-// import Filter from './components/Filter';
+import ProductTable from './components/ProductTable';
 
 function App() {
 
@@ -18,8 +18,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/table/:category" element={<ProductTable />} />
         <Route path="/" element={<Home />} />
-        {/* <Route path="/filter" element={<Filter />} /> */}
       </Routes>
     </div>
   );

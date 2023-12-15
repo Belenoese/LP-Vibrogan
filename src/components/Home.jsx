@@ -14,10 +14,33 @@ import IconWsp from '../assets/Images/IconWsp.png'
 import LogoGris from '../assets/Images/LogoGris.png'
 import FormContact from './FormContact'
 import Footer from './footer'
+import { Link } from 'react-router-dom';
+import ProductTable from './ProductTable'
+import React, { useState, useEffect } from 'react';
 
 function Home() {
+  const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showProducts, setShowProducts] = useState(true); // Estado para controlar la visibilidad
+
+  useEffect(() => {
+    fetch('http://localhost/wordpress/wordpress/wp-json/wp/v2/productos')
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
 
   const first6Divs = productImages.slice(0, 6);
+
+  const handleProductClick = (productName) => {
+    setSelectedProduct(productName);
+    setShowProducts(false);
+  };
+
+  const handleReturnClick = () => {
+    setShowProducts(true);
+    setSelectedProduct(null);
+  };
+  
 
   return (
     <>
@@ -32,28 +55,48 @@ function Home() {
           <div className='containerExperience'>
             <h3 className='experience'>+80 Años de Experiencia</h3>
             <p className='descriptionExperience'>Nuestra empresa cuenta con una larga trayectoria entregando la mejor calidad en prefabricados de hormigón a nuestros clientes desde 1948.</p>
-            <button className="contact" title="Haz clic para contactar" aria-label="Haz clic para contactar">CONTACTAR</button>
+            <Link to="/contact">
+        <button className="contact" title="Haz clic para contactar" aria-label="Haz clic para contactar">CONTACTAR</button>
+           </Link>
             <img className='Mano' src={Mano} />
           </div>
           </div>
         </section>
+     
+        {showProducts && (
         <div className='containerFilter'>
-          <h1 className='titleProductsHome'>Productos</h1>
-          <section className="sectionFilter">
+          <h1 className='titleProducts'>Productos</h1>
+          <section className='sectionFilter'>
             {first6Divs.map((image, index) => (
-              <div className={`${index % 2 === 0 ? 'White' : 'Blue'} containerProducts`} key={image.name}>
+              <div
+                className={`${index % 2 === 0 ? 'White' : 'Blue'} containerProducts`}
+                key={image.name}
+                onClick={() => handleProductClick(image.name)}
+              >
                 <img
                   className={image.name}
                   src={image.src}
                   alt={image.name}
                   style={{ width: image.width, height: image.height }}
                 />
-                <p className={`${index % 2 === 0 ? 'White' : 'Blue'} descriptionProducts`}>{image.name}</p>
+                <p className={`${index % 2 === 0 ? 'White' : 'Blue'} descriptionProducts`}>
+                  {image.name}
+                </p>
               </div>
             ))}
           </section>
-          <button className="viewMore" title="Haz clic para ver todos los productos" aria-label="Haz clic para ver todos los productos">VER MÁS</button>
+          <Link to="/products" className="link-button">
+          <button className="viewMore" title="Haz clic para ver todos los productos" aria-label="Haz clic para ver todos los productos">
+            VER MÁS
+          </button>
+        </Link>
         </div>
+      )}
+
+      {selectedProduct && (
+        <ProductTable selectedProduct={selectedProduct} products={products} handleReturnClick={handleReturnClick} />
+      )}
+
         <section className='section3'>
         <div className='services'>
           <img className='tuboSection3' src={TuboSection3} />

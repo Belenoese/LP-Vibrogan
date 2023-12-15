@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Products.css';
 import productImages from './ProductCategory';
 import Footer from './footer';
+import ProductTable from './ProductTable';
 
-function Products() {
+function Products({ filterName }) {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [showProducts, setShowProducts] = useState(true); // Estado para controlar la visibilidad
@@ -12,7 +13,7 @@ function Products() {
     fetch('http://localhost/wordpress/wordpress/wp-json/wp/v2/productos')
       .then((response) => response.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [filterName]);
 
   const handleProductClick = (productName) => {
     setSelectedProduct(productName);
@@ -24,9 +25,9 @@ function Products() {
     setSelectedProduct(null); 
   };
 
-  const filteredProducts = products.filter(
-    (product) => selectedProduct === product.acf.clasificación
-  );
+  // const filteredProducts = products.filter(
+  //   (product) => selectedProduct === product.acf.clasificación
+  // );
 
   return (
     <>
@@ -55,33 +56,10 @@ function Products() {
         </div>
       )}
 
-      {selectedProduct && (
-        <section className='backroundTable'>
-          <h2 className='titleTableContainer'>{selectedProduct}</h2>
-        <div className="tableContainer">
-          <table className="tableProducts">
-            <thead >
-              <tr >
-                <th className='tableHeader' scope="col">IMAGEN</th>
-                <th className='tableHeader' scope="col">NOMBRE</th>
-                <th className='tableHeader' scope="col">MEDIDAS</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredProducts.map((product) => (
-                <tr key={product.id}>
-                  <td className='tableItem'><img className='imgTable' src={product.acf.imagen} alt={product.acf.nombre} /></td>
-                  <td className='tableItem'>{product.acf.nombre}</td>
-                  <td className='tableItem'>{product.acf.medidas}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-         
-        </div>
-        <button className='backButton' onClick={handleReturnClick}>VOLVER</button>
-        </section>
+{selectedProduct && (
+        <ProductTable selectedProduct={selectedProduct} products={products}  handleReturnClick={handleReturnClick} />
       )}
+      
       <Footer />
     </>
   );
