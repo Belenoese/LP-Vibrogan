@@ -13,11 +13,10 @@ function About() {
     <>
       <section className='firstSectionAbout'>
         <h1 className='aboutMe'>¿QUIÉNES SOMOS?</h1>
-        <p className='textAbout'>VIBROGAN es una empresa familiar con más de 80 años de experiencia dedicada a la elaboración de productos prefabricados de hormigón,
-          cuyo origen se remonta al año 1948 cuando Primo Gandolfi Medel arrendó la fábrica de prefabricados Abraham Selaive R., en la ciudad de
-          Los Ángeles, VIII Región. Es con esta amplia experiencia que en la actualidad hacemos entrega a nuestros clientes de la mejor calidad
-          de productos prefabricados de hormigón, acompañando de la mano a cada uno para la realización exitosa de sus proyectos. Ofrecemos un
-          servicio técnico especializado, opciones de despacho a domicilio y brindamos servicios de instalación con los mejores profesionales.
+        <p className='textAbout'>VIBROGAN es una empresa familiar con más de 80 años de experiencia dedicada a la elaboración de productos prefabricados de hormigón.
+          Es con esta amplia experiencia que en la actualidad hacemos entrega a nuestros clientes de la mejor calidad
+          de productos, acompañando de la mano a cada uno de ellos para la realización exitosa de sus proyectos. Ofrecemos un
+          servicio técnico especializado y opciones de despacho a domicilio.
           Nuestra dedicación a lo largo de los años se refleja en la satisfacción de nuestros clientes y en la excelencia de nuestros productos.</p>
       </section>
       <section className='secondSectionAbout'>
@@ -51,7 +50,7 @@ function About() {
         </div>
         <div className='containerButtons'>
           <button className='button1'>VISUALIZAR PRODUCTOS</button>
-          <button className='button2'>CONTACTAR</button>
+          <button className='button2'>CONTÁCTANOS</button>
         </div>
       </section>
       <section className='fourthSection'>

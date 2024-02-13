@@ -21,13 +21,13 @@
 }
 
 .sectionFilter {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 63px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
     margin-top: 45px;
     padding-bottom: 65px;
     justify-items: center;
-
 }
 
 .containerProducts {
@@ -35,11 +35,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 255px;
-    height: 208px;
-    padding-top: 28px;
-    padding-bottom: 5px;
+    width: 400px;
+    height: 225px;
     border-radius: 5px;
+    background-size: cover;
+    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -53,10 +53,11 @@
 }
 
 .descriptionProducts {
+    color: #fff;
     margin-top: 12px;
     font-family: 'Work Sans', sans-serif;
-    font-size: 23px;
-    border-top: 2px solid #D9D9D9;
+    font-size: 45px;
+    font-weight: bold;
     width: 75%;
     text-align: center;
     padding-top: 7px;
@@ -83,6 +84,19 @@
         justify-items: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .containerProducts {
+        width: 275px;
+        height: 155px;
+    }
+
+    .descriptionProducts {
+        font-size: 30px;
     }
 }
 
@@ -130,9 +144,22 @@
     color: #2947A9;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     padding: 6px;
 }
+
+/* .tableHeader:nth-child(1),
+.tableHeader:nth-child(2) {
+    width: 280px; 
+} */
+
+/* .tableHeader:nth-child(3),
+.tableHeader:nth-child(4),
+.tableHeader:nth-child(5), 
+.tableHeader:nth-child(6),
+.tableHeader:nth-child(7) {
+    min-width: 135px; 
+} */
 
 .tableItem {
     background-color: #2947A9;
@@ -171,6 +198,30 @@
 .backButton:active{
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
   }
+
+   @media (max-width:1230px) {
+    .tableHeader {
+        font-size: 16px; 
+    }
+}
+/*
+@media (max-width:1180px) {
+    .tableHeader {
+        font-size: 13px; 
+    }
+    .tableHeader:nth-child(3),
+    .tableHeader:nth-child(4),
+    .tableHeader:nth-child(5) {
+        width: 80px; 
+    }
+}
+
+@media (max-width:1015px) {
+    .tableHeader {
+        font-size: 10px; 
+    }
+} */
+
 
 @media (max-width:670px) {
     .tableHeader {

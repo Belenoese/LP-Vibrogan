@@ -18,12 +18,12 @@ const Footer = () => {
 
               <div className='contactInfoFooter'>
                 <strong className='titlePhoneFooter'>Teléfono:</strong>
-                <span className='phoneFooter'>432 328000</span>
+                <a href='tel:432328000' className='phoneFooter'><i className="fa-solid fa-phone"></i> 43228000</a>
               </div>
 
               <div className='contactInfoFooter'>
-                <strong className='titleMailFooter'>Correo:</strong>
-                <span className='mailFooter'>Vibrogan@Gmail.com</span>
+                <strong className='titleMailFooter'>Correo electrónico:</strong>
+                <a href='mailto:vibrogan@gmail.com' className='mailFooter'><i className="fa-solid fa-envelope"></i> vibrogan@gmail.com</a>
               </div>
             </section>
             <section className='sectionSocialNetworkFooter'>

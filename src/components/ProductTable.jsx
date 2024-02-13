@@ -1,4 +1,3 @@
-// Nuevo componente ProductTable.js
 import '../styles/Products.css';
 
 function ProductTable({ selectedProduct, products, handleReturnClick }) {
@@ -15,7 +14,12 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
               <tr >
                 <th className='tableHeader' scope="col">IMAGEN</th>
                 <th className='tableHeader' scope="col">NOMBRE</th>
-                <th className='tableHeader' scope="col">MEDIDAS</th>
+                <th className='tableHeader' scope="col">LARGO (mm)</th>
+                <th className='tableHeader' scope="col">ANCHO (mm)</th>
+                <th className='tableHeader' scope="col">ALTO (mm)</th>
+                <th className='tableHeader' scope="col">CANTIDAD A CUBRIR (mt2)</th>
+                <th className='tableHeader' scope="col">PESO DEL PRODUCTO (kg)</th>
+               
               </tr>
             </thead>
             <tbody>

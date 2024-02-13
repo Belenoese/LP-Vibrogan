@@ -143,6 +143,7 @@
     height: 38rem;
     display: block;
     margin: 0 auto;
+    margin-top: 11px;
 }
 
 .titleContactInfo {
@@ -174,6 +175,7 @@
     font-size: 13.63px;
     text-transform: capitalize;
     margin-left: 16px;
+    text-decoration: none;
 }
 
 .iconFace {
@@ -195,6 +197,12 @@
     height: 36px;
     margin-top: -4px;
     margin-left: 11px;
+}
+
+.iconFace:hover,
+.iconInsta:hover,
+.iconWsp:hover {
+    transform: scale(1.2); 
 }
 
 .socialContact {
@@ -246,11 +254,11 @@
     }
 
     .iconInsta {
-        margin-left: -16px;
+        margin-left: -13px;
     }
 
     .iconWsp {
-        margin-left: -16px;
+        margin-left: -13px;
     }
 
     .textService {
@@ -309,7 +317,11 @@
 
     .contactInfo {
         width: 24rem;
-        height: 39.5rem;
+        height: 40.8rem;
+    }
+
+    .tuboSection3 {
+        margin-top: 39px;
     }
 }
 
@@ -386,7 +398,7 @@
     .contactInfo {
         padding: 24px;
         height: 36rem;
-        width: 19rem;
+        width: 20rem;
     }
 
     .strongContactInfo {
@@ -404,13 +416,13 @@
     }
 
     .iconFace {
-        margin-left: -42px;
+        margin-left: -35px;
     }
 
     .section3 {
         padding-top: 67px;
         padding-left: 20px;
-        min-height: 47rem;
+        min-height: 44rem;
     }
 
 }
@@ -497,8 +509,12 @@
     }
 
     .contactInfo {
-        height: 37.5rem;
-        width: 17rem;
+        height: 35.8rem;
+        width: 19.2rem;
+    }
+
+    .tuboSection3 {
+        margin-top: -30px;
     }
 }
 

@@ -1,8 +1,8 @@
+import React, { useState} from 'react';
 import '../styles/Home.css'
 import '../styles/Products.css'
 import '../styles/ContactInfo.css'
 import Mano from '../assets/Images/Mano.png'
-import productImages from './ProductCategory'
 import TuboSection3 from '../assets/Images/TuboSection3.png'
 import ImgCompromiso from '../assets/Images/ImgCompromiso.png'
 import ImgAsisTec from '../assets/Images/ImgAsisTec.png'
@@ -15,43 +15,23 @@ import LogoGris from '../assets/Images/LogoGris.png'
 import FormContact from './FormContact'
 import Footer from './footer'
 import { Link } from 'react-router-dom';
-import ProductTable from './ProductTable'
-import React, { useState, useEffect } from 'react';
+import ProductViewer from './ProductViewer'
+import { fixedContainers } from './ProductsConfig'
+
+
 
 function Home() {
-  const [products, setProducts] = useState([]);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [showProducts, setShowProducts] = useState(true); // Estado para controlar la visibilidad
-
-  useEffect(() => {
-    fetch('http://localhost/wordpress/wordpress/wp-json/wp/v2/productos')
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-  }, []);
-
-  const first6Divs = productImages.slice(0, 6);
-
-  const handleProductClick = (productName) => {
-    setSelectedProduct(productName);
-    setShowProducts(false);
-  };
-
-  const handleReturnClick = () => {
-    setShowProducts(true);
-    setSelectedProduct(null);
-  };
   
 
   return (
     <>
       <article className='articleHome'>
         <section className="section1">
+        <div className='infoSection1'>
           <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
-          <div className='infoSection1'>
           <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
-          <h4 className='description'>Encuentre la máxima calidad en productos y servicios de prefabricados de hormigón, brindamos a nuestros clientes la asistencia
-            técnica que requieren, además de servicios de despacho e instalación a domicilio. Estamos aquí para superar tus expectativas.
-            ¡Contáctanos y experimenta la diferencia!</h4>
+          </div>
+          
           <div className='containerExperience'>
             <h3 className='experience'>+80 Años de Experiencia</h3>
             <p className='descriptionExperience'>Nuestra empresa cuenta con una larga trayectoria entregando la mejor calidad en prefabricados de hormigón a nuestros clientes desde 1948.</p>
@@ -60,42 +40,9 @@ function Home() {
            </Link>
             <img className='Mano' src={Mano} />
           </div>
-          </div>
         </section>
-     
-        {showProducts && (
-        <div className='containerFilter'>
-          <h1 className='titleProducts'>Productos</h1>
-          <section className='sectionFilter'>
-            {first6Divs.map((image, index) => (
-              <div
-                className={`${index % 2 === 0 ? 'White' : 'Blue'} containerProducts`}
-                key={image.name}
-                onClick={() => handleProductClick(image.name)}
-              >
-                <img
-                  className={image.name}
-                  src={image.src}
-                  alt={image.name}
-                  style={{ width: image.width, height: image.height }}
-                />
-                <p className={`${index % 2 === 0 ? 'White' : 'Blue'} descriptionProducts`}>
-                  {image.name}
-                </p>
-              </div>
-            ))}
-          </section>
-          <Link to="/products" className="link-button">
-          <button className="viewMore" title="Haz clic para ver todos los productos" aria-label="Haz clic para ver todos los productos">
-            VER MÁS
-          </button>
-        </Link>
-        </div>
-      )}
 
-      {selectedProduct && (
-        <ProductTable selectedProduct={selectedProduct} products={products} handleReturnClick={handleReturnClick} />
-      )}
+        <ProductViewer fixedContainers={fixedContainers} />
 
         <section className='section3'>
         <div className='services'>
@@ -127,11 +74,11 @@ function Home() {
             <ul className='menuInfo'>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Teléfono:</strong>
-                <span className='spanContactInfo'>432 328 000</span>
+                <a href='tel:432328000' className='spanContactInfo'><i className="fa-solid fa-phone"></i> 43228000</a>
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Correo electrónico:</strong>
-                <span className='spanContactInfo'>vibrogan@gmail.com</span>
+                <a href='mailto:vibrogan@gmail.com' className='spanContactInfo'><i className="fa-solid fa-envelope"></i> vibrogan@gmail.com</a>
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Redes sociales:</strong>

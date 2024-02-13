@@ -8,7 +8,7 @@
   }
 
 .firstSectionAbout {
-    background-color: #1D64CBCF;
+    background-image: url(../assets/Images/FondoConcreto.png);
     padding: 59px 62px 59px 62px;
 }
 
@@ -110,7 +110,6 @@
     font-family: 'Microgramma D Extended Bold', sans-serif;
     font-size: 46px;
     text-align: center;
-    text-decoration-line: underline;
 }
 
 .textVision,
@@ -172,41 +171,44 @@
 
 
 .thirdSectionAbout {
-    background-color: #1D64CBCF;
+    background-image: url('../assets/Images/Fondo.png');
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px; 
-    padding: 70px 0 70px 0;
+    padding: 0 0 70px 0;
   }
 
 .titleThirdSectionAbout {
-    color: #fff;
+    color: #2947A9;
     font-family: 'Microgramma D Extended Bold', sans-serif;
     font-size: 30.68px;
     text-align: center;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .containerCategories {
-    color: #fff;
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    color: #2947A9;
 }
 
 .redesAP,
 .electricalInstallations,
 .civilWorks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 40px;
 }
 
 .imgRedesAP,
 .imgElectricalInstallations,
 .imgCivilWorks {
-    max-width: 11.8rem;
-    height: 11.4rem;
+    max-width: 23.8rem;
+    height: 14.4rem;
 }
 
 .textRedesAP,
@@ -214,9 +216,9 @@
 .textCivilWorks {
     font-family: 'Work Sans', sans-serif;
     font-size: 26.68px;
-    margin-left: 56px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .containerButtons {
@@ -365,7 +367,7 @@
 }
 
 .fourthSection {
-    background-color: #1D64CBCF;
+    background-image: url('../assets/Images/Fondo.png');
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -380,7 +382,7 @@
 
 
 .titleFourthSection {
-    color: #fff;
+    color: #2947A9;
     font-family: 'Microgramma D Extended Bold', sans-serif;
     font-size: 30.68px;
 }

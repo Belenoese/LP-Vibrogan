@@ -37,6 +37,7 @@
     font-size: 13px;
     font-weight: 400;
     margin-left: 10px;
+    text-decoration: none;
 }
 
 .sectionSocialNetworkFooter {
@@ -93,6 +94,12 @@
     margin-left: 7px;
     position: absolute;
     margin-top: 1px;
+}
+
+.iconFaceFooter:hover,
+.iconInstaFooter:hover,
+.iconWspFooter:hover {
+    transform: translateY(-1px);
 }
 
 .logoFooter {
