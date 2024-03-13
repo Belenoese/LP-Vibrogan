@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
-import Location from './components/Location';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation'; 
 import ProductTable from './components/ProductTable';
+import Location from './components/location';
 
 function App() {
 

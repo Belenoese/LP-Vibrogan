@@ -176,8 +176,10 @@ textarea {
   }
 
 .sectionTextContact {
-   background-color: #1D64CBCF;
+    background-image: url(/src/assets/Images/FondoConcreto.png);
    text-align: center;
+   background-size: cover;
+   background-repeat: no-repeat; 
 }
 
 .textContact {

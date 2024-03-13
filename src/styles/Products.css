@@ -148,18 +148,9 @@
     padding: 6px;
 }
 
-/* .tableHeader:nth-child(1),
-.tableHeader:nth-child(2) {
-    width: 280px; 
-} */
-
-/* .tableHeader:nth-child(3),
-.tableHeader:nth-child(4),
-.tableHeader:nth-child(5), 
-.tableHeader:nth-child(6),
-.tableHeader:nth-child(7) {
-    min-width: 135px; 
-} */
+.tableHeader:nth-child(1) {
+    width: 250px; 
+}
 
 .tableItem {
     background-color: #2947A9;
@@ -169,11 +160,20 @@
     padding: 5px;
 }
 
-.imgTable {
-    width: auto;
-    height: 147PX;
-    padding: 10px;
+.tableFirstItem {
+    display: flex;
+    align-items: center;
+}
 
+.carousel-control-next, .carousel-control-prev {
+    color: black;
+    width: 25%;
+}
+
+.imgTable {
+    cursor: pointer;
+    height: 147PX;
+    padding: 35px;
 }
 
 .backButton {
@@ -199,28 +199,21 @@
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.30);
   }
 
+
+
+.modalBodyTable {
+    background-color: #2947A9;
+  }
+
+.modalTitleTable {
+    color: #2947A9;
+  }
+
    @media (max-width:1230px) {
     .tableHeader {
         font-size: 16px; 
     }
 }
-/*
-@media (max-width:1180px) {
-    .tableHeader {
-        font-size: 13px; 
-    }
-    .tableHeader:nth-child(3),
-    .tableHeader:nth-child(4),
-    .tableHeader:nth-child(5) {
-        width: 80px; 
-    }
-}
-
-@media (max-width:1015px) {
-    .tableHeader {
-        font-size: 10px; 
-    }
-} */
 
 
 @media (max-width:670px) {

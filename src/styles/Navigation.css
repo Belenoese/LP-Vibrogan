@@ -63,7 +63,7 @@ li a:hover {
     text-decoration: underline;
 }
 
-img {
+.logo {
     width: 380px;
     height: 65px;
 }
@@ -136,7 +136,7 @@ img {
         margin-left: 16px;
     }
 
-    img {
+    .logo {
         width: 363px;
         height: 66px;
     }
@@ -156,7 +156,7 @@ img {
 }
 
 @media (max-width:425px) {
-    img {
+    .logo {
         width: 250px;
         height: 45px;
     }

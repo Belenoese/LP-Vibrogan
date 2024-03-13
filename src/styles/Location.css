@@ -8,8 +8,10 @@
   }
 
 .firstSectionLocation {
-    background-color: #1D64CBCF;
+    background-image: url(/src/assets/Images/FondoConcreto.png);
     padding: 88px;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 .titleFirstSectionLocation {
@@ -70,12 +72,11 @@
 }
 
 .secondSectionLocation {
-    background-image: url('../assets/Images/Fondo.png');
+    background-image: url(/src/assets/Images/Fondo.png);
     display: flex;
-    /* flex-direction: row; */
-    /* max-width: 100%; */
     justify-content: space-evenly;
-    height: 63rem;
+    align-items: center;
+    padding: 30px;
 }
 
 .containerFirstImg {
@@ -84,11 +85,10 @@
     justify-content: center;
 }
 
-.imgFirstLocation {
-    width: 80%;
-    height: auto;
+.imgLocation {
+    width: 42%;
+    height: 78%;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    /* margin: 182px 45px 0 45px; */
 }
 
 .referenceContainerOfEntry {
@@ -168,16 +168,20 @@
     } 
 } 
 
-@media (max-width:600px) {
+@media (max-width:500px) {
     .secondSectionLocation {
-        height: 26rem;
-     }
-} 
+        height: 47rem;
+        flex-direction: column;
+        gap: 44px;
+        padding: 20px;
+    }
+
+    .imgLocation {
+        width: 62%;
+    }
+}
 
 @media (max-width:460px) {
-    .secondSectionLocation {
-        height: 23rem;
-     }
 
     .textImgLocation {
         font-size: 14.63px;
@@ -190,7 +194,7 @@
 
 @media (max-width:360px) {
     .secondSectionLocation {
-        height: 18rem;
+        height: 32rem;
      }
 
      .textImgLocation {

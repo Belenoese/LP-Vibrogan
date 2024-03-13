@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../styles/Home.css'
 import '../styles/Products.css'
 import '../styles/ContactInfo.css'
@@ -7,7 +7,6 @@ import TuboSection3 from '../assets/Images/TuboSection3.png'
 import ImgCompromiso from '../assets/Images/ImgCompromiso.png'
 import ImgAsisTec from '../assets/Images/ImgAsisTec.png'
 import ImgDespacho from '../assets/Images/ImgDespacho.png'
-import ServisInstalacion from '../assets/Images/ServisInstalacion.png'
 import IconFacebook from '../assets/Images/IconFacebook.png'
 import IconInsta from '../assets/Images/IconInsta.png'
 import IconWsp from '../assets/Images/IconWsp.png'
@@ -17,56 +16,87 @@ import Footer from './footer'
 import { Link } from 'react-router-dom';
 import ProductViewer from './ProductViewer'
 import { fixedContainers } from './ProductsConfig'
+import { Carousel } from 'react-bootstrap';
+import Video from '../assets/Video/video_ubicacion_vibrogan.mp4'
+import Imgdos from '../assets/Images/imgdos.jpg'
+import Imguno from '../assets/Images/imguno.jpg'
 
 
 
 function Home() {
   
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      videoElement.play(); 
+    }
+
+  }, []);
 
   return (
     <>
       <article className='articleHome'>
-        <section className="section1">
+        
+        <section className='section1'>
+
+        <Carousel className='carouselHome' interval={8000}>
+        <Carousel.Item>
+          {/* Video */}
+          <video ref={videoRef} autoPlay muted loop className='responsiveVideo'>
+            <source src={Video} type='video/mp4' />
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img loading='lazy' className='w-100 ImageCarouselHome' src={Imguno} alt='Imagen del letrero de la empresa vibrogan' />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' />
+        </Carousel.Item>
+      </Carousel>
+        
+
         <div className='infoSection1'>
           <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
           <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
-          </div>
+          {/* </div>
           
-          <div className='containerExperience'>
-            <h3 className='experience'>+80 Años de Experiencia</h3>
-            <p className='descriptionExperience'>Nuestra empresa cuenta con una larga trayectoria entregando la mejor calidad en prefabricados de hormigón a nuestros clientes desde 1948.</p>
-            <Link to="/contact">
-        <button className="contact" title="Haz clic para contactar" aria-label="Haz clic para contactar">CONTACTAR</button>
+          <div className='containerExperiencex'> */}
+            {/* <h3 className='experience'>+80 Años de Experiencia</h3>
+            <p className='descriptionExperience'>Nuestra empresa cuenta con una larga trayectoria entregando la mejor calidad en prefabricados de hormigón a nuestros clientes desde 1948.</p> */}
+            <Link to='/contact'>
+        <button className='contact' title='Haz clic para contactar' aria-label='Haz clic para contactar'>CONTACTAR</button>
            </Link>
-            <img className='Mano' src={Mano} />
+            <img loading='lazy' className='Mano' src={Mano} />
           </div>
-        </section>
+          </section>
 
         <ProductViewer fixedContainers={fixedContainers} />
 
         <section className='section3'>
         <div className='services'>
-          <img className='tuboSection3' src={TuboSection3} />
+          <img loading='lazy' className='tuboSection3' src={TuboSection3} />
           <div className='containerServices'>
             <div id='firstService' className='containerService'>
               <p className='textService'>COMPROMISO MEDIO AMBIENTAL</p>
             </div>
-            <img className='imgFirstService' src={ImgCompromiso} />
+            <img loading='lazy' className='imgFirstService' src={ImgCompromiso} />
 
             <div id='secondService' className='containerService'>
               <p className='textService'>ASISTENCIA TÉCNICAL</p>
             </div>
-            <img className='imgSecondService' src={ImgAsisTec} />
+            <img loading='lazy' className='imgSecondService' src={ImgAsisTec} />
 
             <div id='thirdService' className='containerService'>
               <p className='textService'>DESPACHO A DOMICILIO</p>
             </div>
-            <img className='imgThirdService' src={ImgDespacho} />
+            <img loading='lazy' className='imgThirdService' src={ImgDespacho} />
 
-            <div id='fourthService' className='containerService'>
-              <p className='textService'>SERVICIO DE INSTALACIÓN</p>
-            </div>
-            <img className='imgFourthService' src={ServisInstalacion} />
             </div>
           </div>
           <div className='contactInfo'>
@@ -74,23 +104,23 @@ function Home() {
             <ul className='menuInfo'>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Teléfono:</strong>
-                <a href='tel:432328000' className='spanContactInfo'><i className="fa-solid fa-phone"></i> 43228000</a>
+                <a href='tel:432328000' className='spanContactInfo'><i className='fa-solid fa-phone'></i> 43228000</a>
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Correo electrónico:</strong>
-                <a href='mailto:vibrogan@gmail.com' className='spanContactInfo'><i className="fa-solid fa-envelope"></i> vibrogan@gmail.com</a>
+                <a href='mailto:vibrogan@gmail.com' className='spanContactInfo'><i className='fa-solid fa-envelope'></i> vibrogan@gmail.com</a>
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Redes sociales:</strong>
                 <div className='socialContact'>
-                  <a href="#" className='socialNetContactInfo'>
-                    <img src={IconFacebook} alt='Perfil de facebook' className='iconFace' />
+                  <a href='#' className='socialNetContactInfo'>
+                    <img loading='lazy' src={IconFacebook} alt='Perfil de facebook' className='iconFace' />
                   </a>
-                  <a href="#" className='socialNetContactInfo'>
-                    <img src={IconInsta} alt='Perfil de Instagram' className='iconInsta' />
+                  <a href='#' className='socialNetContactInfo'>
+                    <img loading='lazy' src={IconInsta} alt='Perfil de Instagram' className='iconInsta' />
                   </a>
-                  <a href="#" className='socialNetContactInfo'>
-                    <img src={IconWsp} alt='Perfil de whatsapp' className='iconWsp' />
+                  <a href='#' className='socialNetContactInfo'>
+                    <img loading='lazy' src={IconWsp} alt='Perfil de whatsapp' className='iconWsp' />
                   </a>
                 </div>
               </li>
@@ -99,14 +129,14 @@ function Home() {
                 <span className='spanContactInfo'>longitudinal 5 sur, km 499, Los Ángeles</span>
               </li>
               <article className='mapsContactInfo'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3029.800768961463!2d-72.36428792413456!3d-37.38638497208589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDIzJzExLjAiUyA3MsKwMjEnNDIuMiJX!5e1!3m2!1ses-419!2scl!4v1700368776828!5m2!1ses-419!2scl" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                <iframe src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3029.800768961463!2d-72.36428792413456!3d-37.38638497208589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDIzJzExLjAiUyA3MsKwMjEnNDIuMiJX!5e1!3m2!1ses-419!2scl!4v1700368776828!5m2!1ses-419!2scl' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade' />
               </article>
               <li className='itemInfo'>
                 <strong className='strongContactInfo officeHours'>HORARIO DE ATENCIÓN:</strong>
                 <span className='spanContactInfo infoHours'>Lunes a viernes de 09:00 a 13:00 hrs. y de 14:00 a 18:00 hrs. <br /> Sábados de 09:00 a 13:30 hrs.</span>
               </li>
             </ul>
-            <img src={LogoGris} alt='Logo de la empresa' className='logoGris' />
+            <img loading='lazy' src={LogoGris} alt='Logo de la empresa' className='logoGris' />
           </div>
         </section>
         <FormContact />

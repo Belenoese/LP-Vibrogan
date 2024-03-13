@@ -13,31 +13,49 @@
   }
 
 .section1 {
-    background-image: url(../assets/Images/FondoConcreto.png);
     color: #fff;
     width: 100%;
+    height: 30rem;
     display: flex;
     flex-direction: row;
     padding: 2rem 6rem 2rem 6rem;
     align-items: center;
+    position: relative;
+    overflow:hidden
+}
+
+.carouselHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.carouselHome .carousel-control-prev,
+.carouselHome .carousel-control-next {
+    width: 109px;
 }
 
 .infoSection1 {
-    flex: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  
 }
 
 .mainTitle {
     font-family: 'Microgramma D Extended Bold', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .subtitle {
     font-family: 'Work Sans', sans-serif;
     max-width: 53rem;
-    font-size: 25px;
+    font-size: 20px;
   
 }
 
@@ -48,6 +66,7 @@
     margin: 0 auto;
     border: 2px solid #2361D1;
 }
+
 
 .experience {
     color: #2361D1;
@@ -73,7 +92,7 @@
     height: 34px;
     font-family: 'Work Sans', sans-serif;
     font-size: 13.171px;
-    margin: 12px 0 0 36px;
+    margin-top: 15px;
     border: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -106,10 +125,11 @@
   }
 
 .Mano {
+    position: absolute;
     width: 123px;
     height: 147px;
-    margin-top: -66px;
-    margin-left: 121px;
+    margin-top: -10px;
+    left: 86px;
 }
 
 .titleProductsHome {
@@ -119,6 +139,12 @@
     padding-top: 36px;
     font-size: 45px;
 }
+
+@media screen and (min-width: 1530px) {
+    .responsiveVideo {
+        width: 100%;
+    }
+  }
 
 @media (max-width:1650px) {
     .contact {
@@ -134,10 +160,23 @@
     }
 }
 
-@media (max-width:1445px) {
-    .mainTitle {
-        font-size: 31px;
+@media (max-width:1535px) {
+    .section1 {
+        height: 26rem;
     }
+
+    .mainTitle {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:1445px) {
+  
 
     .experience {
         font-size: 25px;
@@ -147,24 +186,52 @@
         font-size: 11px;
     }
     
-    .contact {
-        width: 128px;
-        height: 34px;
-        font-size: 13.171px;
-        margin: 12px 0 0 36px;
+}
+
+@media (max-width:1305px) {
+    .section1 {
+        height: 22rem;
+    }
+
+    .mainTitle {
+        font-size: 19px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .Mano {
+        width: 101px;
+        height: 128px;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .mainTitle {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 10.5px;
+    }
+
+    .Mano {
+        width: 89px;
+        height: 118px;
+    }
+
+    .infoSection1 {
+        left: 31%;
     }
 }
 
 @media (max-width:1135px) {
-    .mainTitle {
-        font-size: 32px;
-        margin-right: 5px;
+
+    .section1 {
+        height: 19rem;
     }
-    
-    .subtitle {
-        font-size: 24px;
-        max-width: 40rem;
-    } 
     
     .containerExperience {
         max-width: 223px;
@@ -179,91 +246,125 @@
         width: 151px;
     }
     
-    .contact {
-        width: 128px;
-        height: 34px;
-        font-size: 13.171px;
-        margin: 12px 0 0 36px;
-    }
-    
-    .section1 {
-        padding: 2rem 3rem 2rem 3rem;
-    } 
 }
 
 @media (max-width:960px) {
-    .mainTitle {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-    } 
 
     .containerExperience {
         margin-left: 0;
         margin-top: 15px;
     }
 
-    .section1 {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 } 
 
+@media (max-width:945px) {
 
-@media (max-width:569px) {
-    .mainTitle {
-        font-size: 25px;
-    }
-
-    .subtitle {
-        font-size: 18px;
-    } 
-    
-    .containerExperience {
-        max-width: 148px;
-        height: 175px;
-    }
-
-    .experience {
-        font-size: 14px;
-        margin-left: 22px;
-        padding-top: 13px;
-    }
-    
-    .descriptionExperience{
-        font-size: 7px;
-        width: 105px;
-        margin: -3px 14px 0 22px;
+    .section1 {
+        height: 18rem;
     }
 
     .contact {
-        width: 87px;
-        height: 31px;
-        font-size: 10.171px;
-        margin-left: 22px;
-    }    
+        width: 110px;
+        height: 29px;
+        font-size: 12.171px;
+    }
 
     .Mano {
-        width: 96px;
-        height: 122px;
-        margin-top: -58px;
-        margin-left: 74px;
+        left: 81px;
     }
+
+    .responsiveVideo {
+        width: 63rem;
+    }
+
 }
 
-@media (max-width:488px) {
+@media (max-width:902px) {
     .section1 {
-        padding: 2rem 2rem 2rem 2rem;
-    }
-
-    .viewMore {
-        width: 193px;
-        height: 33px;
-        font-size: 17px;
+        height: 15.5rem;
     }
 }
+
+@media (max-width:780px) {
+    
+    .infoSection1 {
+        left: 35%;
+    }
+
+    .contact {
+        width: 88px;
+        height: 23px;
+        font-size: 10.171px;
+    }
+
+    .Mano {
+        left: 67px;
+        width: 66px;
+        height: 91px;
+        margin-top: -4px;
+    }
+
+    .responsiveVideo {
+        width: 54rem;
+    }
+}
+
+@media (max-width:680px) {
+
+    .carouselHome .carousel-control-prev, .carouselHome .carousel-control-next {
+        width: 68px;
+    }
+    
+}
+
+@media (max-width:580px) {
+
+    .infoSection1 {
+        left: 40%;
+    }
+
+    .mainTitle {
+        font-size: 13px;
+    }
+
+    .contact {
+        margin-top: 5px;
+        width: 76px;
+    height: 21px;
+    font-size: 9.171px;
+    }
+
+    .Mano {
+        width: 47px;
+        height: 65px;
+        left: 60px;
+    }
+
+}
+
+@media (max-width:478px) {
+    .infoSection1 {
+        left: 44%;
+        top: 42%;
+    }
+
+    .mainTitle {
+        font-size: 11px;
+    }
+
+    .subtitle {
+        font-size: 9.5px;
+    }
+
+    .responsiveVideo {
+        width: 35rem;
+    }
+
+    .section1 {
+        height: 10.5rem;
+    }
+}
+
 
 
 
