@@ -302,19 +302,6 @@
         margin-top: -109px;
     }
 
-    #fourthService {
-        width: 11rem;
-        height: 5rem;
-        margin-left: 6rem;
-        margin-top: 31px;
-    }
-
-    .imgFourthService {
-        width: 61px;
-        height: 57px;
-        margin-left: 3.5rem;
-    }
-
     .contactInfo {
         width: 24rem;
         height: 40.8rem;
@@ -375,20 +362,6 @@
         height: 44px;
         margin-left: 17rem;
         margin-top: -98px;
-    }
-
-    #fourthService {
-        width: 9rem;
-        height: 4.3rem;
-        margin-left: 2rem;
-        margin-top: 36px;
-    }
-
-    .imgFourthService {
-        width: 46px;
-        height: 43px;
-        margin-left: 0.5rem;
-        margin-top: -6rem;
     }
 
     .titleContactInfo {
@@ -492,20 +465,6 @@
         height: 44px;
         margin-left: 14rem;
         margin-top: -78px;
-    }
-
-    #fourthService {
-        width: 8rem;
-        height: 3.5rem;
-        margin-left: 1.5rem;
-        margin-top: 28px;
-    }
-    
-    .imgFourthService {
-        width: 40px;
-        height: 37px;
-        margin-left: 0.5rem;
-        margin-top: -5rem;
     }
 
     .contactInfo {

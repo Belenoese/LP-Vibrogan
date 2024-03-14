@@ -59,31 +59,6 @@
   
 }
 
-.containerExperience {
-    background-color: #fff;
-    max-width: 248px;
-    height: 253px;
-    margin: 0 auto;
-    border: 2px solid #2361D1;
-}
-
-
-.experience {
-    color: #2361D1;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 28px;
-    margin-left: 36px;
-    padding-top: 20px;
-}
-
-.descriptionExperience {
-    color: #2361D1;
-    font-family: 'Work Sans', sans-serif;
-    text-align: justify;
-    margin: 15px 36px 0 36px;
-    font-size: 11px;
-}
-
 .contact{
     background-color: #2361D1;
     color:#fff;
@@ -233,29 +208,7 @@
         height: 19rem;
     }
     
-    .containerExperience {
-        max-width: 223px;
-    }
-
-    .experience {
-        font-size: 22px;
-    }
-    
-    .descriptionExperience {
-        font-size: 10px;
-        width: 151px;
-    }
-    
 }
-
-@media (max-width:960px) {
-
-    .containerExperience {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-
-} 
 
 @media (max-width:945px) {
 

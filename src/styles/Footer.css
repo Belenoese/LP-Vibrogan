@@ -50,6 +50,15 @@
     flex-direction: column;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .textSocialLink {
     margin-bottom: 1px;
 }

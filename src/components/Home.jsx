@@ -64,11 +64,7 @@ function Home() {
         <div className='infoSection1'>
           <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
           <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
-          {/* </div>
-          
-          <div className='containerExperiencex'> */}
-            {/* <h3 className='experience'>+80 Años de Experiencia</h3>
-            <p className='descriptionExperience'>Nuestra empresa cuenta con una larga trayectoria entregando la mejor calidad en prefabricados de hormigón a nuestros clientes desde 1948.</p> */}
+
             <Link to='/contact'>
         <button className='contact' title='Haz clic para contactar' aria-label='Haz clic para contactar'>CONTACTAR</button>
            </Link>
@@ -113,13 +109,13 @@ function Home() {
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Redes sociales:</strong>
                 <div className='socialContact'>
-                  <a href='#' className='socialNetContactInfo'>
+                  <a href='https://web.facebook.com/Vibrogan/' className='socialNetContactInfo'>
                     <img loading='lazy' src={IconFacebook} alt='Perfil de facebook' className='iconFace' />
                   </a>
-                  <a href='#' className='socialNetContactInfo'>
+                  <a href='https://www.instagram.com/vibrogan.cl/' className='socialNetContactInfo'>
                     <img loading='lazy' src={IconInsta} alt='Perfil de Instagram' className='iconInsta' />
                   </a>
-                  <a href='#' className='socialNetContactInfo'>
+                  <a href='https://wa.me/message/AUL244VH32MKB1' className='socialNetContactInfo'>
                     <img loading='lazy' src={IconWsp} alt='Perfil de whatsapp' className='iconWsp' />
                   </a>
                 </div>

@@ -31,24 +31,24 @@ const Footer = () => {
              <div className='containerLinks'>
               <div className='textSocialLink'>
               
-              <a href='https://www.facebook.com/vibrogan'>
+              <a href='https://web.facebook.com/Vibrogan/'>
                 <img loading='lazy' src={IconFacebook} alt='Link a pagina de facebook' className='iconFaceFooter' />
+                <span className='linkSocialNetworkFace'>Facebook - VIBROGAN</span>
               </a>
-              <span className='linkSocialNetworkFace'>Facebook - VIBROGAN</span>
               </div>
 
               <div className='textSocialLink'>
-              <a href='https://www.instagram.com/vibrogan'>
+              <a href='https://www.instagram.com/vibrogan.cl/'>
                 <img loading='lazy' src={IconInsta} alt='Link a pagina de Instagram' className='iconInstaFooter' />
+                <span className='linkSocialNetworkInsta'>Instagram - @vibrogan</span>
               </a>
-              <span className='linkSocialNetworkInsta'>Instagram - @vibrogan</span>
               </div>
 
               <div className='textSocialLink'>
-              <a href='https://www.whatsapp.com/whatsapp'>
+              <a href='https://wa.me/message/AUL244VH32MKB1'>
                 <img loading='lazy' src={IconWsp} alt='Link a whatsapp' className='iconWspFooter' />
+                <span className='linkSocialNetworkWsp'>WhatsApp - +56 43 2328000</span>
               </a>
-              <span className='linkSocialNetworkWsp'>WhatsApp - +569 45200857</span>
               </div>
               </div>
             </section>
