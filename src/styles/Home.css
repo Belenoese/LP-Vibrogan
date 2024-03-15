@@ -41,7 +41,7 @@
 .infoSection1 {
     position: absolute;
     top: 50%;
-    left: 32%;
+    left: 28%;
     transform: translate(-50%, -50%);
     text-align: left;
   
@@ -283,8 +283,8 @@
     .contact {
         margin-top: 5px;
         width: 76px;
-    height: 21px;
-    font-size: 9.171px;
+        height: 21px;
+        font-size: 9.171px;
     }
 
     .Mano {

@@ -7,7 +7,6 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
   const [showModal, setShowModal] = useState(false);
   const [modalCarouselActiveIndex, setModalCarouselActiveIndex] = useState(0);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -65,6 +64,7 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
             {filteredProducts.map((product) => (
               <tr key={product.id}>
                 <td className='tableItem tableFirstItem'>
+                {product.acf.imagen2?.url ? (
                   <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
                     <Carousel.Item>
                       <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
@@ -73,6 +73,9 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
                       <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen2.url} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
                     </Carousel.Item>
                   </Carousel>
+                   ) : (
+                    <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
+                  )}
                 </td>
 
                 <td className='tableItem'>{product.acf.nombre}</td>
@@ -92,14 +95,18 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
           <Modal.Title className='modalTitleTable'>{filteredProducts[selectedImageIndex].acf.nombre}</Modal.Title>
         </Modal.Header>
         <Modal.Body className='modalBodyTable'>
-          <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
-            <Carousel.Item>
-              <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen} alt={filteredProducts[selectedImageIndex].acf.nombre} />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen2.url} alt={filteredProducts[selectedImageIndex].acf.nombre} />
-            </Carousel.Item>
-          </Carousel>
+        {filteredProducts[selectedImageIndex].acf.imagen2?.url ? (
+      <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
+        <Carousel.Item>
+          <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen} alt={filteredProducts[selectedImageIndex].acf.nombre} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen2.url} alt={filteredProducts[selectedImageIndex].acf.nombre} />
+        </Carousel.Item>
+      </Carousel>
+    ) : (
+      <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen} alt={filteredProducts[selectedImageIndex].acf.nombre} />
+    )}
         </Modal.Body>
       </Modal>
     </section>

@@ -110,22 +110,20 @@
 .backroundTable {
     background-image: url('../assets/Images/Fondo.png');
     height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding-top: 35px;
 }
   
 .tableProducts {
     width: 100%;
     table-layout: fixed;
     text-align: center;
+    
 }
 
 .titleTableContainer {
     font-family: 'Microgramma D Extended Bold', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 35px;
     color: #2947A9;
 }
 
@@ -161,7 +159,6 @@
 }
 
 .tableFirstItem {
-    display: flex;
     align-items: center;
 }
 
@@ -170,10 +167,15 @@
     width: 25%;
 }
 
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
 .imgTable {
     cursor: pointer;
     height: 147PX;
-    padding: 35px;
+    padding: 20px 40px;
+    min-width: 13rem;
 }
 
 .backButton {
@@ -209,20 +211,43 @@
     color: #2947A9;
   }
 
-   @media (max-width:1230px) {
+@media (max-width:1230px) {
     .tableHeader {
         font-size: 16px; 
     }
 }
 
+@media (max-width: 960px) {
+    .tableProducts {
+      overflow-x: auto;
+      display: block;
+    }
+
+    .tableProducts::-webkit-scrollbar {
+        width: 9px;
+        height: 7px;
+      }
+      
+      .tableProducts::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      .tableProducts::-webkit-scrollbar-thumb {
+        background: #b3acac;
+        border-radius: 2px;
+      }
+      
+      .tableProducts::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+  }
+  
+
 
 @media (max-width:670px) {
     .tableHeader {
         font-size: 18px;
-    }
-
-    .imgTable {
-        height: 109PX;
     }
 
     .tableItem {
@@ -239,10 +264,6 @@
 @media (max-width:513px) {
     .tableContainer {
         padding: 16px;
-    }
-
-    .imgTable {
-        height: 88PX;
     }
 
     .backButton {
@@ -270,10 +291,5 @@
     }
 }
 
-@media (max-width:368px) {
-    .imgTable {
-        height: 74PX;
-    }
-}
 
 
