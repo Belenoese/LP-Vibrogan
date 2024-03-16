@@ -13,6 +13,9 @@ const Navigation = () => {
 
   return (
     <header>
+      <a className='downloadPdf' href="https://drive.google.com/file/d/1-otojOzYEuwy8GJPTNJCW3fXoRMX65UP/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Propuesta Comercial
+        <i className="fa-solid fa-file-pdf"></i>
+      </a>
       <nav >
         <img loading='lazy' className='logo' src={logo} alt='Logo de la empresa' />
         <button className='mobile-menu' title='Haz click para desplegar el menu' onClick={toggleMenu}>

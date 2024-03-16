@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+
 import '../styles/Home.css'
 import '../styles/Products.css'
 import '../styles/ContactInfo.css'
@@ -39,8 +40,9 @@ function Home() {
   return (
     <>
       <article className='articleHome'>
-        
+    
         <section className='section1'>
+  
 
         <Carousel className='carouselHome' interval={8000}>
         <Carousel.Item>

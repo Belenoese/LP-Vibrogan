@@ -16,9 +16,22 @@ nav {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 12px 25px 0 13px;
-    height: 83px;
+    padding: 0px 25px 0 13px;
+    height: 65px;
 }
+
+
+.downloadPdf {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    color: #2361D1;
+    background-color: #fff;
+}
+      
+     
+
 
 .logo {
     margin-top: -5px;
@@ -81,10 +94,6 @@ li a:hover {
 
     body {
         padding-top: 75px;
-    }
-
-    nav {
-        height: 73px;
     }
 
     .logo {
@@ -164,7 +173,6 @@ li a:hover {
     .mobile-menu {
         display: block;
         font-size: 27px;
-        margin-top: -20px;
         margin-left: 16px;
 
     }
@@ -186,6 +194,6 @@ li a:hover {
     }
 
     nav {
-        height: 63px;
+        height: 50px;
     }
 }
