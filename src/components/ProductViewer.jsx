@@ -8,7 +8,7 @@ function ProductViewer({fixedContainers}) {
     const [showProducts, setShowProducts] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost/wordpress/wordpress/wp-json/wp/v2/productos')
+        fetch('https://vibrogan.cl/wp/wp-json/wp/v2/producto')
           .then((response) => response.json())
           .then((data) => setProducts(data));
       }, []);
