@@ -127,7 +127,8 @@ function Home() {
                 <span className='spanContactInfo'>longitudinal 5 sur, km 499, Los Ángeles</span>
               </li>
               <article className='mapsContactInfo'>
-                <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48212.09164528935!2d-72.43775965136717!3d-37.387227599999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bdf0073bce39b%3A0x4826de02ab8e80a5!2svibrogan!5e1!3m2!1ses-419!2scl!4v1710450657220!5m2!1ses-419!2scl' style={{ border: 0 }} allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>              </article>
+              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48212.09164528935!2d-72.43775965136717!3d-37.387227599999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bdf0073bce39b%3A0x4826de02ab8e80a5!2svibrogan!5e1!3m2!1ses-419!2scl!4v1710450657220!5m2!1ses-419!2scl' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
+         </article>
               <li className='itemInfo'>
                 <strong className='strongContactInfo officeHours'>HORARIO DE ATENCIÓN:</strong>
                 <span className='spanContactInfo infoHours'>Lunes a viernes de 09:00 a 13:00 hrs. y de 14:00 a 18:00 hrs. <br /> Sábados de 09:00 a 13:30 hrs.</span>
