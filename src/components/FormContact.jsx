@@ -38,7 +38,7 @@ function FormContact() {
     };
 
      
-     emailjs.send('service_hogfald', 'template_0llftsc', emailData, '5-Eo1cif3agNlPblZ')
+     emailjs.send('service_srfa8ie', 'template_dw2xgbg', emailData, '6tnvkkupJB3iwnGi_')
      .then((response) => {
       console.log('Correo enviado con éxito:', response);
       if (formRef.current) {

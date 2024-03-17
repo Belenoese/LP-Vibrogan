@@ -429,11 +429,11 @@
     #firstService {
         width: 9rem;
         height: 3.3rem;
-        margin-left: 8.3rem;
+        margin-left: 7rem;
     }
 
     .imgFirstService {
-        margin-left: 15.5rem;
+        margin-left: 14.5rem;
         margin-top: -5.2rem;
         width: 37.978px;
         height: 42.978px;
@@ -443,13 +443,13 @@
         width: 38%;
         height: 3.3rem;
         margin-top: 33px;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .imgSecondService {
         width: 38.466px;
         height: 41px;
-        margin-left: 1rem;
+        margin-left: 0rem;
         margin-top: -84px;
     }
 
@@ -468,7 +468,7 @@
     }
 
     .contactInfo {
-        height: 35.8rem;
+        height: 36rem;
         width: 19.2rem;
     }
 
