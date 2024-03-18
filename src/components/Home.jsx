@@ -131,7 +131,8 @@ function Home() {
          </article>
               <li className='itemInfo'>
                 <strong className='strongContactInfo officeHours'>HORARIO DE ATENCIÓN:</strong>
-                <span className='spanContactInfo infoHours'>Lunes a viernes de 09:00 a 13:00 hrs. y de 14:00 a 18:00 hrs. <br /> Sábados de 09:00 a 13:30 hrs.</span>
+                <span className='spanContactInfo infoHours'>Lunes a viernes de 09:00 a 13:00 hrs. y de 14:00 a 18:00 hrs.</span>
+                <span className='spanContactInfo infoHours'>Sábados de 09:00 a 13:30 hrs.</span>
               </li>
             </ul>
             <img loading='lazy' src={LogoGris} alt='Logo de la empresa' className='logoGris' />
