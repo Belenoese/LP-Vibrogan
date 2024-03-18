@@ -113,20 +113,20 @@ textarea {
 
 .asteriskName {
     color: red;
-    position: relative;
-    margin-left: -15.2rem;
+    position: absolute;
+    right: 238px;
 }
 
 .asteriskEmail {
     color: red;
-    position: relative;
-    margin-left: -9.8rem;
+    position: absolute;
+    right: 152px;
 }
 
 .asteriskSubject {
     color: red;
-    position: relative;
-    margin-left: -15.4rem;
+    position: absolute;
+    right: 241px;
 }
 
 .asteriskMessage {
@@ -240,18 +240,22 @@ textarea {
     }
 
     .asteriskName {
-        margin-left: -8.6rem;
+
+        right: 136px;
         font-size: 10px;
-    }
+        top: 6px;
+    } 
 
     .asteriskEmail {
-        margin-left: -4.5rem;
+        right: 70px;
         font-size: 10px;
+        top: 6px;
     }
 
     .asteriskSubject {
-        margin-left: -8.8rem;
+        right: 139px;
         font-size: 10px;
+        top: 6px;
     }
 
     .asteriskMessage {

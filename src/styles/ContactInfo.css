@@ -386,6 +386,7 @@
     .logoGris {
         width: 165px;
         height: auto;
+        margin-bottom: 20px;
     }
 
     .iconFace {
@@ -456,14 +457,14 @@
     #thirdService {
         width: 8rem;
         height: 3.5rem;
-        margin-left: 7.6rem;
+        margin-left: 6.6rem;
         margin-top: 35px;
     }
 
     .imgThirdService {
         width: 46px;
         height: 44px;
-        margin-left: 14rem;
+        margin-left: 13rem;
         margin-top: -78px;
     }
 
