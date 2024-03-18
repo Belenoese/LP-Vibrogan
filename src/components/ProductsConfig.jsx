@@ -17,10 +17,10 @@ export const fixedContainers = [
     name: 'Pavimentos',
     backgroundImage: `url(${Pavimento})`,
   },
-  {
-    name: 'Piezas Especiales',
-    backgroundImage: `url(${PiezasEspeciales})`,
-  },
+  // {
+  //   name: 'Piezas Especiales',
+  //   backgroundImage: `url(${PiezasEspeciales})`,
+  // },
   {
     name: 'Urbanización',
     backgroundImage: `url(${Urbanización})`,

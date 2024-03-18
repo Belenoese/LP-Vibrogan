@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 import ProductViewer from './ProductViewer'
 import { fixedContainers } from './ProductsConfig'
 import { Carousel } from 'react-bootstrap';
-import Video from '../assets/Video/video_ubicacion_vibrogan.mp4'
+import Video1 from '../assets/Video/video_ubicacion_vibrogan.mp4'
 import Imgdos from '../assets/Images/imgdos.jpg'
 import Imguno from '../assets/Images/imguno.jpg'
 
@@ -48,7 +48,7 @@ function Home() {
         <Carousel.Item>
           {/* Video */}
           <video ref={videoRef} autoPlay muted loop className='responsiveVideo'>
-            <source src={Video} type='video/mp4' />
+            <source src={Video1} type='video/mp4' />
             Tu navegador no soporta el elemento de video.
           </video>
         </Carousel.Item>

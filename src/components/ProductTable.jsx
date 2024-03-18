@@ -55,7 +55,7 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
               <th className='tableHeader' scope='col'>LARGO (mm)</th>
               <th className='tableHeader' scope='col'>ANCHO (mm)</th>
               <th className='tableHeader' scope='col'>ALTO (mm)</th>
-              <th className='tableHeader' scope='col'>CANTIDAD A CUBRIR (mt2)</th>
+              <th className='tableHeader' scope='col'>PROFUNDIDAD (cm)</th>
               <th className='tableHeader' scope='col'>PESO DEL PRODUCTO (kg)</th>
 
             </tr>
@@ -82,7 +82,7 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
                 <td className='tableItem'>{product.acf.largo}</td>
                 <td className='tableItem'>{product.acf.ancho}</td>
                 <td className='tableItem'>{product.acf.alto}</td>
-                <td className='tableItem'>{product.acf.cantidad_a_cubrir_mt2}</td>
+                <td className='tableItem'>{product.acf.profundidad}</td>
                 <td className='tableItem'>{product.acf.peso_del_producto_kg}</td>
               </tr>
             ))}
