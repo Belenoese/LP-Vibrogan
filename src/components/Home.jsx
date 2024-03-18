@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 import ProductViewer from './ProductViewer'
 import { fixedContainers } from './ProductsConfig'
 import { Carousel } from 'react-bootstrap';
-import Video1 from '../assets/Video/video_ubicacion_vibrogan.mp4'
+import Video from '../assets/Video/video_ubicacion_vibroganok.mp4'
 import Imgdos from '../assets/Images/imgdos.jpg'
 import Imguno from '../assets/Images/imguno.jpg'
 
@@ -42,23 +42,23 @@ function Home() {
       <article className='articleHome'>
     
         <section className='section1'>
-  
 
         <Carousel className='carouselHome' interval={8000}>
-        <Carousel.Item>
-          {/* Video */}
-          <video ref={videoRef} autoPlay muted loop className='responsiveVideo'>
-            <source src={Video1} type='video/mp4' />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </Carousel.Item>
-
+       
         <Carousel.Item>
           <img loading='lazy' className='w-100 ImageCarouselHome' src={Imguno} alt='Imagen del letrero de la empresa vibrogan' />
         </Carousel.Item>
 
         <Carousel.Item>
           <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          {/* Video */}
+          <video ref={videoRef} autoPlay muted loop className='responsiveVideo'>
+            <source src={Video} type='video/mp4' />
+            Tu navegador no soporta el elemento de video.
+          </video>
         </Carousel.Item>
       </Carousel>
         
