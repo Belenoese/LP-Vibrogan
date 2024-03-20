@@ -206,7 +206,7 @@
 }
 
 .socialContact {
-    margin-left: 130px;
+    margin-left: 151px;
     margin-top: -26px;
 }
 
@@ -251,7 +251,7 @@
 
 @media (max-width: 1350px) {
     .socialContact {
-        margin-left: 111px;
+        margin-left: 120px;
     }
 
     .iconInsta {
@@ -371,7 +371,7 @@
 
     .contactInfo {
         padding: 24px;
-        height: 36rem;
+        height: 37rem;
         width: 20rem;
     }
 
@@ -417,7 +417,7 @@
 
     .contactInfo {
         margin-top: 6rem;
-        height: 35rem;
+        height: 35.5rem;
         width: 23rem;
     }
 }
