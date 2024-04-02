@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from 'react';
-
+import React, { useRef, useEffect, Suspense, lazy } from 'react';
 import '../styles/Home.css'
 import '../styles/Products.css'
 import '../styles/ContactInfo.css'
@@ -24,16 +23,18 @@ import Video from '../assets/Video/video_ubicacion_vibroganok.mp4'
 import LazyVideo from './lazyVideo';
 
 
+const LazyFormContact = lazy(() => import('./FormContact'));
+const LazyFooter = lazy(() => import('./footer'));
 
 function Home() {
-  
+
   const videoRef = useRef(null);
 
   useEffect(() => {
     const videoElement = videoRef.current;
 
     if (videoElement) {
-      videoElement.play(); 
+      videoElement.play();
     }
 
   }, []);
@@ -41,57 +42,56 @@ function Home() {
   return (
     <>
       <article className='articleHome'>
-    
+
         <section className='section1'>
 
-        <Carousel className='carouselHome' interval={8000}>
-       
-        <Carousel.Item>
-          <img loading='lazy' className='w-100 ImageCarouselHome' src={Imguno} alt='Imagen del letrero de la empresa vibrogan' />
-        </Carousel.Item>
+          <Carousel className='carouselHome' interval={8000}>
 
-        <Carousel.Item>
-          <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' />
-        </Carousel.Item>
+            <Carousel.Item>
+              <img loading='auto' className='w-100 ImageCarouselHome' src={Imguno} alt='Imagen del letrero de la empresa vibrogan' />
+            </Carousel.Item>
 
-        <Carousel.Item>
-          {/* Video */}
-          <LazyVideo src={Video} type='video/mp4' />
-        </Carousel.Item>
-      </Carousel>
-        
+            <Carousel.Item>
+              <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' data-src={Imgdos} />
+            </Carousel.Item>
 
-        <div className='infoSection1'>
-          <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
-          <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
+            <Carousel.Item>
+              <LazyVideo src={Video} type='video/mp4' />
+            </Carousel.Item>
+          </Carousel>
+
+
+          <div className='infoSection1'>
+            <h1 className='mainTitle'>PREFABRICADOS DE HORMIGÓN</h1>
+            <h2 className='subtitle'>Entregamos excelencia respaldada por nuestra experiencia</h2>
 
             <Link to='/contact'>
-        <button className='contact' title='Haz clic para contactar' aria-label='Haz clic para contactar'>CONTACTAR</button>
-           </Link>
+              <button className='contact' title='Haz clic para contactar' aria-label='Haz clic para contactar'>CONTACTAR</button>
+            </Link>
             <img loading='lazy' className='Mano' src={Mano} />
           </div>
-          </section>
+        </section>
 
         <ProductViewer fixedContainers={fixedContainers} />
 
         <section className='section3'>
-        <div className='services'>
-          <img loading='lazy' className='tuboSection3' src={TuboSection3} />
-          <div className='containerServices'>
-            <div id='firstService' className='containerService'>
-              <p className='textService'>COMPROMISO MEDIO AMBIENTAL</p>
-            </div>
-            <img loading='lazy' className='imgFirstService' src={ImgCompromiso} />
+          <div className='services'>
+            <img loading='lazy' className='tuboSection3' src={TuboSection3} />
+            <div className='containerServices'>
+              <div id='firstService' className='containerService'>
+                <p className='textService'>COMPROMISO MEDIO AMBIENTAL</p>
+              </div>
+              <img loading='lazy' className='imgFirstService' src={ImgCompromiso} />
 
-            <div id='secondService' className='containerService'>
-              <p className='textService'>ASISTENCIA TÉCNICAL</p>
-            </div>
-            <img loading='lazy' className='imgSecondService' src={ImgAsisTec} />
+              <div id='secondService' className='containerService'>
+                <p className='textService'>ASISTENCIA TÉCNICAL</p>
+              </div>
+              <img loading='lazy' className='imgSecondService' src={ImgAsisTec} />
 
-            <div id='thirdService' className='containerService'>
-              <p className='textService'>DESPACHO A DOMICILIO</p>
-            </div>
-            <img loading='lazy' className='imgThirdService' src={ImgDespacho} />
+              <div id='thirdService' className='containerService'>
+                <p className='textService'>DESPACHO A DOMICILIO</p>
+              </div>
+              <img loading='lazy' className='imgThirdService' src={ImgDespacho} />
 
             </div>
           </div>
@@ -125,8 +125,8 @@ function Home() {
                 <span className='spanContactInfo'>longitudinal 5 sur, km 499, Los Ángeles</span>
               </li>
               <article className='mapsContactInfo'>
-              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48212.09164528935!2d-72.43775965136717!3d-37.387227599999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bdf0073bce39b%3A0x4826de02ab8e80a5!2svibrogan!5e1!3m2!1ses-419!2scl!4v1710450657220!5m2!1ses-419!2scl' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
-         </article>
+                <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48212.09164528935!2d-72.43775965136717!3d-37.387227599999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bdf0073bce39b%3A0x4826de02ab8e80a5!2svibrogan!5e1!3m2!1ses-419!2scl!4v1710450657220!5m2!1ses-419!2scl' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
+              </article>
               <li className='itemInfo'>
                 <strong className='strongContactInfo officeHours'>HORARIO DE ATENCIÓN:</strong>
                 <span className='spanContactInfo infoHours'>Lunes a viernes de 09:00 a 13:00 hrs. y de 14:00 a 18:00 hrs.</span>
@@ -136,8 +136,13 @@ function Home() {
             <img loading='lazy' src={LogoGris} alt='Logo de la empresa' className='logoGris' />
           </div>
         </section>
-        <FormContact />
-        <Footer />
+        <Suspense fallback={<div>Loading...</div>}>
+          <FormContact />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Footer />
+        </Suspense>
+
       </article>
     </>
   )
