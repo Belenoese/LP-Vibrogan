@@ -17,7 +17,7 @@ const Navigation = () => {
         <i className="fa-solid fa-file-pdf"></i>
       </a>
       <nav >
-        <img className='logo' src={logo} alt='Logo de la empresa' />
+        <img loading='auto' className='logo' src={logo} alt='Logo de la empresa' />
         <button className='mobile-menu' title='Haz click para desplegar el menu' onClick={toggleMenu}>
           <i className='fa-solid fa-bars'></i>
         </button>
