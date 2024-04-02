@@ -52,7 +52,7 @@ function Home() {
             </Carousel.Item>
 
             <Carousel.Item>
-              <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' data-src={Imgdos} />
+              <img loading='lazy' className='w-100 ImageCarouselHome' src={Imgdos} alt='Imagen con productos de la empresa vibrogan' />
             </Carousel.Item>
 
             <Carousel.Item>
