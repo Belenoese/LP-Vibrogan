@@ -20,14 +20,8 @@ nav {
     height: 65px;
 }
 
-
-.downloadPdf {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 8px;
-    color: #2361D1;
-    background-color: #fff;
+.logo {
+    margin-top: 7px;
 }
       
 .menuLinks {

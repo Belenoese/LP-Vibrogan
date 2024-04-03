@@ -21,7 +21,8 @@
     padding: 2rem 6rem 2rem 6rem;
     align-items: center;
     position: relative;
-    overflow:hidden
+    overflow:hidden;
+    margin-top: -19px;
 }
 
 .carouselHome {
@@ -298,7 +299,7 @@
 @media (max-width:478px) {
     .infoSection1 {
         left: 44%;
-        top: 42%;
+        top: 48%;
     }
 
     .mainTitle {
@@ -310,11 +311,11 @@
     }
 
     .responsiveVideo {
-        width: 35rem;
+        width: 36rem;
     }
 
     .section1 {
-        height: 10.5rem;
+        height: 11.5rem;
     }
 }
 

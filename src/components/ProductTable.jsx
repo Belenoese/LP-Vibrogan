@@ -47,47 +47,62 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
     <section className='backroundTable'>
       <h2 className='titleTableContainer'>{selectedProduct}</h2>
       <div className='tableContainer'>
-        <table className='tableProducts'>
-          <thead >
-            <tr >
-              <th className='tableHeader' scope='col'>IMAGEN</th>
-              <th className='tableHeader' scope='col'>NOMBRE</th>
-              <th className='tableHeader' scope='col'>LARGO (mm)</th>
-              <th className='tableHeader' scope='col'>ANCHO (mm)</th>
-              <th className='tableHeader' scope='col'>ALTO (mm)</th>
-              <th className='tableHeader' scope='col'>PROFUNDIDAD (cm)</th>
-              <th className='tableHeader' scope='col'>PESO DEL PRODUCTO (kg)</th>
+      <table className='tableProducts'>
+  <thead>
+    <tr>
+      <th className='tableHeader' scope='col'>IMAGEN</th>
+      <th className='tableHeader' scope='col'>NOMBRE</th>
+      <th className='tableHeader' scope='col'>LARGO (mm)</th>
+      <th className='tableHeader' scope='col'>ANCHO (mm)</th>
+      <th className='tableHeader' scope='col'>ALTO (mm)</th>
+      <th className='tableHeader' scope='col'>PROFUNDIDAD (cm)</th>
+      <th className='tableHeader' scope='col'>PESO DEL PRODUCTO (kg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {filteredProducts
+      .sort((a, b) => {
+        const alphabeticalComparison = a.acf.nombre.localeCompare(b.acf.nombre);
 
-            </tr>
-          </thead>
-          <tbody>
-            {filteredProducts.map((product) => (
-              <tr key={product.id}>
-                <td className='tableItem tableFirstItem'>
-                {product.acf.imagen2?.url ? (
-                  <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
-                    <Carousel.Item>
-                      <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen2.url} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
-                    </Carousel.Item>
-                  </Carousel>
-                   ) : (
-                    <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
-                  )}
-                </td>
+        if (alphabeticalComparison !== 0) {
+          return alphabeticalComparison;
+        }
 
-                <td className='tableItem'>{product.acf.nombre}</td>
-                <td className='tableItem'>{product.acf.largo}</td>
-                <td className='tableItem'>{product.acf.ancho}</td>
-                <td className='tableItem'>{product.acf.alto}</td>
-                <td className='tableItem'>{product.acf.profundidad}</td>
-                <td className='tableItem'>{product.acf.peso_del_producto_kg}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        return (
+          parseFloat(a.acf.largo) - parseFloat(b.acf.largo) ||
+          parseFloat(a.acf.ancho) - parseFloat(b.acf.ancho) ||
+          parseFloat(a.acf.alto) - parseFloat(b.acf.alto) ||
+          parseFloat(a.acf.profundidad) - parseFloat(b.acf.profundidad) ||
+          parseFloat(a.acf.peso_del_producto_kg) - parseFloat(b.acf.peso_del_producto_kg)
+        );
+      })
+      .map((product) => (
+        <tr key={product.id}>
+          <td className='tableItem tableFirstItem'>
+            {product.acf.imagen2?.url ? (
+              <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
+                <Carousel.Item>
+                  <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen2.url} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
+                </Carousel.Item>
+              </Carousel>
+            ) : (
+              <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
+            )}
+          </td>
+          <td className='tableItem'>{product.acf.nombre}</td>
+          <td className='tableItem'>{product.acf.largo}</td>
+          <td className='tableItem'>{product.acf.ancho}</td>
+          <td className='tableItem'>{product.acf.alto}</td>
+          <td className='tableItem'>{product.acf.profundidad}</td>
+          <td className='tableItem'>{product.acf.peso_del_producto_kg}</td>
+        </tr>
+      ))}
+  </tbody>
+</table>
+
         <button className='backButton' onClick={handleReturnClick}>VOLVER</button>
       </div>
       <Modal className='modalProductTable' show={showModal} onHide={closeModal}>
