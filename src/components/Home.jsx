@@ -104,7 +104,7 @@ function Home() {
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Correo electrónico:</strong>
-                <a href='mailto:vibrogan@gmail.com' className='spanContactInfo'><i className='fa-solid fa-envelope'></i> vibrogan@gmail.com</a>
+                <a href='mailto:vibrogan@gmail.com' className='spanContactInfo'><i className='fa-solid fa-envelope'></i> contacto@vibrogan.cl</a>
               </li>
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Redes sociales:</strong>

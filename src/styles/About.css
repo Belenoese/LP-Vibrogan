@@ -87,23 +87,16 @@
     }
 }
 
-
-
-
 .secondSectionAbout {
     background-image: url('../assets/Images/Fondo.png');
 }
 
 .containerVisionMission {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 70px;
     color: #2947A9;
     padding: 108px;
-}
-
-.vision {
-    margin-right: 50px;
 }
 
 .titleVision,
@@ -118,12 +111,11 @@
 .textMission {
     display: flex;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-width: 30.8rem;
-    text-align: justify;
+    text-align: center;
     justify-content: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 30px;
-    margin-top: 42px;
+    margin-top: 20px;
 }
 
 @media (max-width:1200px) {
@@ -142,7 +134,11 @@
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:770px) {
+
+    .containerVisionMission {
+        gap: 40px;
+    }
 
     .titleVision,
     .titleMission {
@@ -158,6 +154,7 @@
 @media (max-width:580px) {
     .containerVisionMission {
         padding: 29px;
+        gap: 20px;
     }
 
     .titleVision,

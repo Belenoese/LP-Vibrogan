@@ -23,7 +23,7 @@ const Footer = () => {
 
               <div className='contactInfoFooter'>
                 <strong className='titleMailFooter'>Correo electrónico:</strong>
-                <a href='mailto:vibrogan@gmail.com' className='mailFooter'><i className="fa-solid fa-envelope"></i> vibrogan@gmail.com</a>
+                <a href='mailto:vibrogan@gmail.com' className='mailFooter'><i className="fa-solid fa-envelope"></i> contacto@vibrogan.cl</a>
               </div>
             </section>
             <section className='sectionSocialNetworkFooter'>
