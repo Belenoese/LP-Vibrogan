@@ -12,6 +12,7 @@
     padding: 88px;
     background-size: cover;
     background-repeat: no-repeat; 
+    margin-top: -23px;
 }
 
 .titleFirstSectionLocation {
@@ -227,19 +228,6 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
-/* .mapLocation {
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%; 
-    position: relative;
-}
-
-.mapLocation iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-} */
 
 .sectionMapsLocation {
     height: 16rem;

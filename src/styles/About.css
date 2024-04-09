@@ -9,9 +9,10 @@
 
 .firstSectionAbout {
     background-image: url(../assets/Images/FondoConcreto.png);
-    padding: 59px 62px 59px 62px;
+    padding: 59px 108px 59px 108px;
     background-size: cover;
     background-repeat: no-repeat; 
+    margin-top: -22px;
 }
 
 .aboutMe {
@@ -42,7 +43,7 @@
 
 @media (max-width:650px) {
     .aboutMe {
-        font-size: 36.68px;
+        font-size: 27.68px;
     
     }
     
@@ -52,9 +53,6 @@
 }
 
 @media (max-width:580px) {
-    .firstSectionAbout {
-        padding: 38px 29px 38px 29px;
-    }
 
     .aboutMe {
         font-size: 30.68px;
@@ -67,9 +65,6 @@
 }
 
 @media (max-width:440px) {
-    .firstSectionAbout {
-        padding: 29px;
-    }
 
     .aboutMe {
         font-size: 21.68px;
@@ -119,9 +114,6 @@
 }
 
 @media (max-width:1200px) {
-    .containerVisionMission {
-        padding: 50px;
-    }
 
     .titleVision,
     .titleMission {
@@ -136,8 +128,13 @@
 
 @media (max-width:770px) {
 
+    .firstSectionAbout {
+        padding: 59px 80px 59px 80px;
+    }
+
     .containerVisionMission {
         gap: 40px;
+        padding: 80px;
     }
 
     .titleVision,
@@ -152,6 +149,11 @@
 }
 
 @media (max-width:580px) {
+
+    .firstSectionAbout {
+        padding: 29px;
+    }
+
     .containerVisionMission {
         padding: 29px;
         gap: 20px;
