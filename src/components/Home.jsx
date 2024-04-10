@@ -84,7 +84,7 @@ function Home() {
               <img loading='lazy' className='imgFirstService' src={ImgCompromiso} />
 
               <div id='secondService' className='containerService'>
-                <p className='textService'>ASISTENCIA TÉCNICAL</p>
+                <p className='textService'>ASISTENCIA TÉCNICA</p>
               </div>
               <img loading='lazy' className='imgSecondService' src={ImgAsisTec} />
 
