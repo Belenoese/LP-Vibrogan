@@ -109,10 +109,10 @@ function Home() {
               <li className='itemInfo'>
                 <strong className='strongContactInfo'>Redes sociales:</strong>
                 <div className='socialContact'>
-                  <a href='https://web.facebook.com/Vibrogan/' className='socialNetContactInfo'>
+                  <a href='https://web.facebook.com/profile.php?id=61558581650858' className='socialNetContactInfo'>
                     <img loading='lazy' src={IconFacebook} alt='Perfil de facebook' className='iconFace' />
                   </a>
-                  <a href='https://www.instagram.com/vibrogan.cl/' className='socialNetContactInfo'>
+                  <a href='https://www.instagram.com/vibrogan/?fbclid=IwAR3wqGsOgqHsDSn0U6pIc8Bts3wCCe2eliQXsl5gBo94ZrV53Ctrj5Zo-00' className='socialNetContactInfo'>
                     <img loading='lazy' src={IconInsta} alt='Perfil de Instagram' className='iconInsta' />
                   </a>
                   <a href='https://wa.me/message/AUL244VH32MKB1' className='socialNetContactInfo'>

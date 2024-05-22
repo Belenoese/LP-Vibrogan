@@ -31,14 +31,14 @@ const Footer = () => {
              <div className='containerLinks'>
               <div className='textSocialLink'>
               
-              <a href='https://web.facebook.com/Vibrogan/'>
+              <a href='https://web.facebook.com/profile.php?id=61558581650858'>
                 <img loading='lazy' src={IconFacebook} alt='Link a pagina de facebook' className='iconFaceFooter' />
                 <span className='linkSocialNetworkFace'>Facebook - VIBROGAN</span>
               </a>
               </div>
 
               <div className='textSocialLink'>
-              <a href='https://www.instagram.com/vibrogan.cl/'>
+              <a href='https://www.instagram.com/vibrogan/?fbclid=IwAR3wqGsOgqHsDSn0U6pIc8Bts3wCCe2eliQXsl5gBo94ZrV53Ctrj5Zo-00'>
                 <img loading='lazy' src={IconInsta} alt='Link a pagina de Instagram' className='iconInstaFooter' />
                 <span className='linkSocialNetworkInsta'>Instagram - @vibrogan</span>
               </a>

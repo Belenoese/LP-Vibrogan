@@ -1,13 +1,13 @@
-import Colectores from '../assets/Images/Colectores.png';
+import sanitario from '../assets/Images/sanitario.png';
 import Edificacion from '../assets/Images/Edificación.png';
 import Pavimento from '../assets/Images/Pavimento.png';
-import PiezasEspeciales from '../assets/Images/Especiales.png';
+import electricidad from '../assets/Images/electricidad.png';
 import Urbanización from '../assets/Images/Urbanización.png';
 
 export const fixedContainers = [
   {
-    name: 'Colectores',
-    backgroundImage: `url(${Colectores})`,
+    name: 'Sanitario',
+    backgroundImage: `url(${sanitario})`,
   },
   {
     name: 'Edificación',
@@ -17,10 +17,10 @@ export const fixedContainers = [
     name: 'Pavimentos',
     backgroundImage: `url(${Pavimento})`,
   },
-  // {
-  //   name: 'Piezas Especiales',
-  //   backgroundImage: `url(${PiezasEspeciales})`,
-  // },
+  {
+    name: 'Electricidad',
+    backgroundImage: `url(${electricidad})`,
+  },
   {
     name: 'Urbanización',
     backgroundImage: `url(${Urbanización})`,
