@@ -15,18 +15,24 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
     }, 1000);
   }, []);
 
-  const filteredProducts = products.filter(
-    (product) => selectedProduct === product.acf.clasificación
-  );
+ // Filtrar productos que coinciden con la clasificación y tienen datos válidos
+ const filteredProducts = products.filter(
+  (product) =>
+    selectedProduct === product.acf?.clasificación && // Validar clasificación
+    product.acf?.nombre && // Validar que nombre exista
+    product.acf?.imagen // Validar que imagen exista
+);
 
-  const openModal = (productId) => {
-    const productIndex = filteredProducts.findIndex(
-      (product) => product.id === productId
-    );
+const openModal = (productId) => {
+  const productIndex = filteredProducts.findIndex(
+    (product) => product.id === productId
+  );
+  if (productIndex !== -1) {
     setSelectedImageIndex(productIndex);
     setModalCarouselActiveIndex(productIndex);
     setShowModal(true);
-  };
+  }
+};
 
   const handleModalCarouselChange = (selectedIndex, e) => {
     setModalCarouselActiveIndex(selectedIndex);
@@ -61,21 +67,7 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
   </thead>
   <tbody>
     {filteredProducts
-      .sort((a, b) => {
-        const alphabeticalComparison = a.acf.nombre.localeCompare(b.acf.nombre);
-
-        if (alphabeticalComparison !== 0) {
-          return alphabeticalComparison;
-        }
-
-        return (
-          parseFloat(a.acf.largo) - parseFloat(b.acf.largo) ||
-          parseFloat(a.acf.ancho) - parseFloat(b.acf.ancho) ||
-          parseFloat(a.acf.alto) - parseFloat(b.acf.alto) ||
-          parseFloat(a.acf.profundidad) - parseFloat(b.acf.profundidad) ||
-          parseFloat(a.acf.peso_del_producto_kg) - parseFloat(b.acf.peso_del_producto_kg)
-        );
-      })
+       .sort((a, b) => a.acf?.nombre?.localeCompare(b.acf?.nombre))
       .map((product) => (
         <tr key={product.id}>
           <td className='tableItem tableFirstItem'>
@@ -91,37 +83,57 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
             ) : (
               <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
             )}
-          </td>
-          <td className='tableItem'>{product.acf.nombre}</td>
-          <td className='tableItem'>{product.acf.largo}</td>
-          <td className='tableItem'>{product.acf.ancho}</td>
-          <td className='tableItem'>{product.acf.alto}</td>
-          <td className='tableItem'>{product.acf.profundidad}</td>
-          <td className='tableItem'>{product.acf.peso_del_producto_kg}</td>
-        </tr>
+           </td>
+                  <td className="tableItem">{product.acf?.nombre}</td>
+                  <td className="tableItem">{product.acf?.largo || '-'}</td>
+                  <td className="tableItem">{product.acf?.ancho || '-'}</td>
+                  <td className="tableItem">{product.acf?.alto || '-'}</td>
+                  <td className="tableItem">{product.acf?.profundidad || '-'}</td>
+                  <td className="tableItem">{product.acf?.peso_del_producto_kg || '-'}</td>
+                </tr>
       ))}
   </tbody>
 </table>
 
         <button className='backButton' onClick={handleReturnClick}>VOLVER</button>
       </div>
-      <Modal className='modalProductTable' show={showModal} onHide={closeModal}>
+      <Modal className="modalProductTable" show={showModal} onHide={closeModal}>
         <Modal.Header closeButton>
-          <Modal.Title className='modalTitleTable'>{filteredProducts[selectedImageIndex].acf.nombre}</Modal.Title>
+          <Modal.Title className="modalTitleTable">
+            {filteredProducts[selectedImageIndex]?.acf?.nombre || 'Producto'}
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body className='modalBodyTable'>
-        {filteredProducts[selectedImageIndex].acf.imagen2?.url ? (
-      <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
-        <Carousel.Item>
-          <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen} alt={filteredProducts[selectedImageIndex].acf.nombre} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen2.url} alt={filteredProducts[selectedImageIndex].acf.nombre} />
-        </Carousel.Item>
-      </Carousel>
-    ) : (
-      <img loading='lazy' className='d-block w-100 imgTableModal' src={filteredProducts[selectedImageIndex].acf.imagen} alt={filteredProducts[selectedImageIndex].acf.nombre} />
-    )}
+        <Modal.Body className="modalBodyTable">
+          {filteredProducts[selectedImageIndex]?.acf?.imagen2?.url ? (
+            <Carousel
+              activeIndex={modalCarouselActiveIndex}
+              onSelect={handleModalCarouselChange}
+            >
+              <Carousel.Item>
+                <img
+                  loading="lazy"
+                  className="d-block w-100 imgTableModal"
+                  src={filteredProducts[selectedImageIndex]?.acf?.imagen}
+                  alt={filteredProducts[selectedImageIndex]?.acf?.nombre}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  loading="lazy"
+                  className="d-block w-100 imgTableModal"
+                  src={filteredProducts[selectedImageIndex]?.acf?.imagen2?.url}
+                  alt={filteredProducts[selectedImageIndex]?.acf?.nombre}
+                />
+              </Carousel.Item>
+            </Carousel>
+          ) : (
+            <img
+              loading="lazy"
+              className="d-block w-100 imgTableModal"
+              src={filteredProducts[selectedImageIndex]?.acf?.imagen}
+              alt={filteredProducts[selectedImageIndex]?.acf?.nombre}
+            />
+          )}
         </Modal.Body>
       </Modal>
     </section>
