@@ -18,7 +18,7 @@ function ProductTable({ selectedProduct, products, handleReturnClick }) {
  // Filtrar productos que coinciden con la clasificación y tienen datos válidos
  const filteredProducts = products.filter(
   (product) =>
-    selectedProduct === product.acf?.clasificación && // Validar clasificación
+    selectedProduct === product.acf?.clasificacion && // Validar clasificación
     product.acf?.nombre && // Validar que nombre exista
     product.acf?.imagen // Validar que imagen exista
 );
@@ -58,11 +58,10 @@ const openModal = (productId) => {
     <tr>
       <th className='tableHeader' scope='col'>IMAGEN</th>
       <th className='tableHeader' scope='col'>NOMBRE</th>
-      <th className='tableHeader' scope='col'>LARGO (mm)</th>
-      <th className='tableHeader' scope='col'>ANCHO (mm)</th>
-      <th className='tableHeader' scope='col'>ALTO (mm)</th>
-      <th className='tableHeader' scope='col'>PROFUNDIDAD (cm)</th>
-      <th className='tableHeader' scope='col'>PESO DEL PRODUCTO (kg)</th>
+      <th className='tableHeader' scope='col'>LARGO</th>
+      <th className='tableHeader' scope='col'>ANCHO</th>
+      <th className='tableHeader' scope='col'>ALTO</th>
+      <th className='tableHeader' scope='col'>PESO DEL PRODUCTO</th>
     </tr>
   </thead>
   <tbody>
@@ -71,13 +70,13 @@ const openModal = (productId) => {
       .map((product) => (
         <tr key={product.id}>
           <td className='tableItem tableFirstItem'>
-            {product.acf.imagen2?.url ? (
+            {product.acf.imagen2? (
               <Carousel activeIndex={modalCarouselActiveIndex} onSelect={handleModalCarouselChange}>
                 <Carousel.Item>
                   <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen2.url} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
+                  <img loading='lazy' className='d-block w-100 imgTable' src={product.acf.imagen2} alt={product.acf.nombre} onClick={() => openModal(product.id)} />
                 </Carousel.Item>
               </Carousel>
             ) : (
@@ -88,7 +87,6 @@ const openModal = (productId) => {
                   <td className="tableItem">{product.acf?.largo || '-'}</td>
                   <td className="tableItem">{product.acf?.ancho || '-'}</td>
                   <td className="tableItem">{product.acf?.alto || '-'}</td>
-                  <td className="tableItem">{product.acf?.profundidad || '-'}</td>
                   <td className="tableItem">{product.acf?.peso_del_producto_kg || '-'}</td>
                 </tr>
       ))}
@@ -100,11 +98,11 @@ const openModal = (productId) => {
       <Modal className="modalProductTable" show={showModal} onHide={closeModal}>
         <Modal.Header closeButton>
           <Modal.Title className="modalTitleTable">
-            {filteredProducts[selectedImageIndex]?.acf?.nombre || 'Producto'}
+            {filteredProducts[selectedImageIndex]?.acf?.nombre || 'productos'}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="modalBodyTable">
-          {filteredProducts[selectedImageIndex]?.acf?.imagen2?.url ? (
+          {filteredProducts[selectedImageIndex]?.acf?.imagen2?(
             <Carousel
               activeIndex={modalCarouselActiveIndex}
               onSelect={handleModalCarouselChange}
@@ -121,7 +119,7 @@ const openModal = (productId) => {
                 <img
                   loading="lazy"
                   className="d-block w-100 imgTableModal"
-                  src={filteredProducts[selectedImageIndex]?.acf?.imagen2?.url}
+                  src={filteredProducts[selectedImageIndex]?.acf?.imagen2}
                   alt={filteredProducts[selectedImageIndex]?.acf?.nombre}
                 />
               </Carousel.Item>

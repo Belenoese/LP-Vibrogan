@@ -11,7 +11,7 @@ function ProductViewer({fixedContainers}) {
 
     useEffect(() => {
       setLoading(true); // Inicia el estado de carga
-        fetch('https://vibrogan.cl/wp/wp-json/wp/v2/producto?per_page=100')
+        fetch('https://vibrogan.cl/wp/wp-json/wp/v2/productos?per_page=100')
         .then((response) => {
           if (!response.ok) {
             throw new Error('Error al cargar los productos.');
