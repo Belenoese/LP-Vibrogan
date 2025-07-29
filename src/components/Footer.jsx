@@ -18,7 +18,7 @@ const Footer = () => {
 
               <div className='contactInfoFooter'>
                 <strong className='titlePhoneFooter'>Teléfono:</strong>
-                <a href='tel:432328000' className='phoneFooter'><i className="fa-solid fa-phone"></i> 43228000</a>
+                <a href='tel:432328000' className='phoneFooter'><i className="fa-solid fa-phone"></i> 432328000</a>
               </div>
 
               <div className='contactInfoFooter'>
