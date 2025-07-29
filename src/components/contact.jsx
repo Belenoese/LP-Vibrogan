@@ -1,5 +1,5 @@
 import FormContact from "./FormContact"
-import Footer from "./footer"
+import Footer from "./Footer"
 
 function Contact() {
 
